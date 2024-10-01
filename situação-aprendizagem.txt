@@ -1,3 +1,26 @@
+Elementos Gerais:
+I. Implementação do site/página web em ambiente de desenvolvimento (antes da publicação).
+II. Publicação do Site na web. 
+
+Detalhamento das estrutura e aspecto visual do site/página web a ser implementado deve conter:
+1. Barra de navegação, com links de serviços, além do link da página home e de contato;
+2. Página de Serviços de programação e tipos de Banco de Dados empregados nos serviços;
+3. Página de Algoritmos e Lógica Computacional que a empresa é capaz de implementar;
+4. Página de componentes eletrônicos, componentes de rede, servidores e dispositivos.
+5. Rodapé com nome e da marca registrada da empresa.
+
+RESULTADOS ESPERADOS: Implementação e publicação do site/página que contenham os elementos gerais e estrutura do site, descrevendo os serviços relacionados aos serviços que envolvem elementos de rede e eletroeletrônica, modelagem e tipos de banco de dados, técnicas de programação e lógica computacional com os respectivos algoritmos, infraestrutura de redes e servidores, aplicação de scripts em sistemas operacionais e ferramentas de escritório utilizadas para a prestação de serviços. Conteúdo esperado no site/página
+1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido;
+2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP);
+3. Descrição dos equipamentos aplicados em redes com sua respectiva função e configuração;
+4. Descrição via fluxograma dos algoritmos que a empresa implementa (3 exemplos);
+5. Tecnologias banco de dados relacionais utilizadas na empresa - SQL (3 exemplos);
+6. Diagramas DER e MER de banco de dados relacionais (3 exemplos);
+7. Componentes Eletrônicos empregados em serviços (3 exemplos);
+8. Fluxograma de algoritmos implementados (3 exemplos);
+9. Programas implementados em Javascript (3 exemplos);
+10. Programas de ordenação implementados em Javascript (3 exemplos);
+
 1, 2 e 3 {
 	SERVIDOR: DNS - HTTP - DHCP
 	CONFIG: PRINT das configurações dos servidores
@@ -23,6 +46,6 @@
 	
 }
 8 e 9 {
-	
+	FLUXOGRAMA
 }
 10 - BÔNUS
