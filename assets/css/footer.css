@@ -10,8 +10,30 @@ footer {
     align-items: center;
 }
 
+footer .direitos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 #dash {
     margin: 0 10px;
+}
+
+.redes {
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes a {
+    flex-grow: 1;
+    width: 30%;
+}
+
+.redes a img {
+    width: 100%;
 }
 
 @media (width <= 923px) {
@@ -19,6 +41,14 @@ footer {
         order: 3;
         font-size: 1rem;
         flex-direction: column;
+    }
+
+    footer .direitos {
+        flex-direction: column;
+    }
+
+    .redes {
+        margin-top: 5px;
     }
 
     #dash {

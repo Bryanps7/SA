@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url("/cursor.png"), auto;
+    cursor: url("/assets/imgs/cursor/cursor-default.png"), auto;
 }
 
 h1, h2, h3, h4, h5, h6, .titulo {
