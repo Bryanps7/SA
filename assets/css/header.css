@@ -77,4 +77,8 @@ nav a {
         opacity: 0;
         transition: 0.3s;
     }
+
+    nav a {
+        font-size: 1.8rem;
+    }
 }

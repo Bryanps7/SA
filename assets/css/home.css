@@ -10,7 +10,7 @@ main {
     background-color: #a1a1a1;
     font-size: 1.2rem;
     flex: 20 1 500px;
-    height: calc(100vh - 186px);
+    height: calc(100vh - 180px);
     flex-wrap: wrap;
     overflow: auto;
 }
@@ -24,7 +24,7 @@ main section {
 
 @media (width <= 923px) {
     main {
-        height: calc(100vh - 330px);
+        height: calc(100vh - 280px);
         order: 1;
     }
 }
