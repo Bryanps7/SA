@@ -1,13 +1,13 @@
 Elementos Gerais:
 [ ] I. Implementação do site/página web em ambiente de desenvolvimento (antes da publicação).
-[ ] II. Publicação do Site na web. 
+[x] II. Publicação do Site na web. 
 
 Detalhamento das estrutura e aspecto visual do site/página web a ser implementado deve conter:
-[ ] 1. Barra de navegação, com links de serviços, além do link da página home e de contato;
+[x] 1. Barra de navegação, com links de serviços, além do link da página home e de contato;
 [ ] 2. Página de Serviços de programação e tipos de Banco de Dados empregados nos serviços;
 [ ] 3. Página de Algoritmos e Lógica Computacional que a empresa é capaz de implementar;
 [ ] 4. Página de componentes eletrônicos, componentes de rede, servidores e dispositivos.
-[ ] 5. Rodapé com nome e da marca registrada da empresa.
+[x] 5. Rodapé com nome e da marca registrada da empresa.
 
 RESULTADOS ESPERADOS: Implementação e publicação do site/página que contenham os elementos gerais e estrutura do site, descrevendo os serviços relacionados aos serviços que envolvem elementos de rede e eletroeletrônica, modelagem e tipos de banco de dados, técnicas de programação e lógica computacional com os respectivos algoritmos, infraestrutura de redes e servidores, aplicação de scripts em sistemas operacionais e ferramentas de escritório utilizadas para a prestação de serviços. Conteúdo esperado no site/página
 [ ] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido;
