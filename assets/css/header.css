@@ -1,6 +1,6 @@
 header {
     flex: 1 1 100vw;
-    height: 100px;
+    height: 80px;
 }
 
 header #logo {
@@ -27,7 +27,7 @@ header #logo img {
 
 nav {
     flex: 1 1 100vw;
-    height: 97px;
+    height: 77px;
     align-items: center;
     justify-content: flex-end;
 }
@@ -40,7 +40,7 @@ header, nav {
 
 nav a {
     margin: 3%;
-    font-size: 20pt;
+    font-size: 14px;
 }
 
 @media (width <= 923px) {

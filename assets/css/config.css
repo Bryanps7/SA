@@ -22,13 +22,6 @@ h1, h2, h3, h4, h5, h6, .titulo {
     font-family: 'Poppins';
 }
 
-main {
-    display: flex;
-    margin: 3px;
-    background-color: #a1a1a1;
-    font-size: 1.2rem;
-}
-
 a {
     text-decoration: none;
     color: inherit;

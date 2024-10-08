@@ -6,8 +6,11 @@ body {
 }
 
 main {
+    display: flex;
+    background-color: #a1a1a1;
+    font-size: 1.2rem;
     flex: 20 1 500px;
-    height: calc(100vh - 224px);
+    height: calc(100vh - 186px);
     flex-wrap: wrap;
     overflow: auto;
 }
