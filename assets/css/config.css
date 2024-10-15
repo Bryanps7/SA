@@ -11,16 +11,16 @@
 }
 
 * {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     cursor: url("/assets/imgs/cursor/cursor-default.png"), auto;
 }
 
-h1, h2, h3, h4, h5, h6, .titulo {
+/* h1, h2, h3, h4, h5, h6, .titulo {
     font-family: 'Poppins';
-}
+} */
 
 a {
     text-decoration: none;
