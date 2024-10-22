@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Algoritmos | Prinz Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="/public/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/scroll.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/aside.css">
+
+    <link rel="stylesheet" href="/assets/css/pagin.css">
+    
+    <script src="/assets/js/header.js" defer></script>
+
+    <script src="/assets/js/num-primos-compostos.js" defer></script>
+    <script src="/assets/js/num-fatorial.js" defer></script>
+    <script src="/assets/js/array-bubleSort.js" defer></script>
+    <script src=""></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html" id="logo">
+            <img src="/assets/imgs/icon/Prinz-code-simple.svg" alt="logo">
+        </a>
+        
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="/index.html">Home</a>
+            <a href="/public/html/algoritmos.html">Algoritmos</a>
+            <a href="/public/html/redes.html">Fundamentos de Redes</a>
+            <a href="/public/html/banco-de-dados.html">Banco de Dados</a>
+            <a href="/public/html/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h1 id="home">Algoritmos</h1>
+            <hr>
+            <p>Está página mostra exemplos de códigos desenvolvidos em sala, aonde você pode rodar e ver funcionando e consegue analisar o código usado.</p>
+        </section>
+        <section class="exercicio">
+            <h2 id="npc">Números Primos e Compostos</h2>
+            <p>Esse programa fornecerá um número aleatório e verá se o número é primo ou composto e quais são seus divisores</p>
+            <button id="getNPC">Executar</button>
+            <button id="showNPC">Mostrar Código</button>
+            <!-- <button id="fluxoNPC">Fluxograma</button> -->
+            <div class="screen" id="code-NPC" style="display: none;">
+                <pre>
+function setValueRandom(max, min) {
+    const random = Math.floor(Math.random() * (max - min + 1) + min)
+    return random;
+}
+
+let pushNumber = document.querySelector('#getNPC')
+
+pushNumber.addEventListener('click', ()=>{
+    let display = document.querySelector('#execute-NPC')
+    let number = setValueRandom(100, 1)
+    let divisible = []
+    let given = ''
+
+    for(let i = 0; i <= number; i++) {
+        if(number % i == 0) {
+            divisible.push(i)
+        }
+    }
+
+    if(divisible.length > 2) {
+        given = "Composto"
+    } else {
+        given = 'Primo'
+    }
+
+    display.style.display = 'flex'
+    display.innerHTML = `O número sorteado: ${number}.`
+    display.innerHTML += `O número é: ${given}.`
+    display.innerHTML += `Seus divisores são: [ ${divisible.join(', ')} ]`
+})
+                </pre>
+            </div>
+            <div class="screen" id="execute-NPC" style="display: none;"></div>
+            <div class="screen" id="fluxo-NPC" style="display: none;"></div>
+        </section>
+        <section class="exercicio">
+            <h2 id="fat">Fatorial</h2>
+            <p>Esse programa fornecerá um número aleatório e vai fatorar ele.</p>
+            <button id="getFat">Executar</button>
+            <button id="showFat">Mostrar Código</button>
+            <!-- <button id="fluxoFat">Fluxograma</button> -->
+            <div class="screen" id="code-Fat" style="display: none;">
+                <pre>
+function setValueRandom(max, min) {
+    const random = Math.floor(Math.random() * (max - min + 1) + min)
+    return random;
+}
+
+let pushNumber = document.querySelector('#getFat')
+
+pushNumber.addEventListener('click', ()=>{
+    let display = document.querySelector('#execute-Fat')
+    let number = setValueRandom(100, 1)
+    let arrayFatorial = []
+    let fatorial = 1
+
+    for(let i = number; i > 0; i--) {
+        arrayFatorial.push(i)
+        fatorial *= i
+    }
+
+    display.style.display = 'flex'
+    display.innerHTML = `O número sorteado é: ${number}!.`
+    display.innerHTML += `Seu fatorial é: ${fatorial}.`
+    display.innerHTML += `Cálculo: ${number}! = ${arrayFatorial.join(' * ')} = ${fatorial}`
+})                    
+                </pre>
+            </div>
+            <div class="screen" id="execute-Fat" style="display: none;"></div>
+            <div class="screen" id="fluxo-Fat" style="display: none;"></div>
+        </section>
+        <section class="exercicio">
+            <h2 id="bub">Bubble Sort</h2>
+            <p>Esse programa criará um array com valores aleatórios e colocará em ordem crescente.</p>
+            <button id="getBub">Executar</button>
+            <button id="showBub">Mostrar Código</button>
+            <!-- <button id="fluxoBub">Fluxograma</button> -->
+            <div class="screen" id="code-Bub" style="display: none;">
+                <pre>
+function setArrayRandom(max, min, tam) {
+    let randomArray = []
+    for(let i = 0; i < tam; i++) {
+        const random = Math.floor(Math.random() * (max - min + 1) + min)
+        randomArray.push(random)
+    }
+    return randomArray;
+}
+
+let pushNumberBub = document.querySelector('#getBub')
+
+function bubbleSort (array) {
+    for(let i = 0; i < array.length; i++) {
+        for(let j = 0; j < array.length; j++) {
+            if(array[j] > array[j+1]) {
+                let swap = array[j]
+                array[j] = array[j+1]
+                array[j+1] = swap
+            }
+        }
+
+    }
+    return array
+}
+
+pushNumberBub.addEventListener('click', ()=>{
+    let display = document.querySelector('#execute-Bub')
+    let array = setArrayRandom(50, 1, 10)
+    display.innerHTML = `A Array Sorteada é: ${array}!.`
+    let arrayOrganized = []
+
+    arrayOrganized = bubbleSort(array)
+
+    display.style.display = 'flex'
+    display.innerHTML += `Organizada: ${arrayOrganized}.`
+})
+                </pre>
+            </div>
+            <div class="screen" id="execute-Bub" style="display: none;"></div>
+            <div class="screen" id="fluxo-Bub" style="display: none;"></div>
+        </section>
+    </main>
+    <aside>
+        <a href="#home"><h3>Começo</h3></a>
+        <a href="#npc"><h3>Números Primos e Compostos</h3></a>
+        <a href="#fat"><h3>Fatorial</h3></a>
+        <a href="#bub"><h3>Bubble Sort</h3></a>
+    </aside>
+    <footer>
+        <div class="direitos">
+            <p>Todos os direitos reservados &copy;</p> <span id="dash">-</span> <p>Bryan Prinz / Prinz Code</p>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/Bryanps7"><img src="/assets/imgs/svg/github.svg" alt="logo github"></a>
+            <a href="https://api.whatsapp.com/send?phone=48991375142"><img src="/assets/imgs/svg/mensage.svg" alt="logo para o whatsapp"></a>
+            <a href="https://www.google.com/maps/search/sesi+tijucas/@-27.2305002,-48.6326707,19z?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"><img src="/assets/imgs/svg/location.svg" alt="icone de localização"></a>
+        </div>
+    </footer>
+</body>
+</html>
