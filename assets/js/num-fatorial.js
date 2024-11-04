@@ -17,27 +17,7 @@ pushNumberFat.addEventListener('click', ()=>{
     }
 
     display.style.display = 'flex'
-    display.innerHTML = `O número sorteado é: ${number}!. <br>`
+    display.innerHTML = `O número sorteado é: ${number}! <br>`
     display.innerHTML += `Seu fatorial é: ${fatorial}. <br>`
     display.innerHTML += `Cálculo: ${number}! = ${arrayFatorial.join(' * ')} = ${fatorial}`
 })
-
-let showCodeFat = document.querySelector('#showFat')
-let showFluxoFat = document.querySelector('#fluxoFat')
-
-showCodeFat.addEventListener('click', ()=>{
-    showScreen('code-Fat')
-})    
-
-showFluxoFat.addEventListener('click', ()=>{
-    showScreen('fluxo-Fat')
-})
-
-function showScreen(type) {
-    let screen = document.querySelector(`#${type}`).style
-    if(screen.display == 'none') {
-        screen.display = 'flex'
-    } else {
-        screen.display = 'none'
-    }
-}

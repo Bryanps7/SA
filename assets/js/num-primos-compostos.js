@@ -3,15 +3,6 @@ function setValueRandom(max, min) {
     return random;
 }
 
-function showScreen(type) {
-    let screen = document.querySelector(`#${type}`).style
-    if(screen.display == 'none') {
-        screen.display = 'flex'
-    } else {
-        screen.display = 'none'
-    }
-}
-
 let pushNumberNPC = document.querySelector('#getNPC')
 
 pushNumberNPC.addEventListener('click', ()=>{
@@ -37,16 +28,3 @@ pushNumberNPC.addEventListener('click', ()=>{
     display.innerHTML += `O número é: ${given}. <br>`
     display.innerHTML += `Seus divisores são: [ ${divisible.join(', ')} ]`
 })
-
-let showCodeNPC = document.querySelector('#showNPC')
-let showFluxoNPC = document.querySelector('#fluxoNPC')
-
-showCodeNPC.addEventListener('click', ()=>{
-    showScreen('code-NPC')
-})    
-
-showFluxoNPC.addEventListener('click', ()=>{
-    showScreen('fluxo-NPC')
-})
-
-
