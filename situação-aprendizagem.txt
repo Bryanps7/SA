@@ -75,10 +75,10 @@ Algoritmos e Fluxograma:
 
 Programação:
 [ ] 1. escolher 3 exercícios da prova de arrays e postar no site
-[ ] 2. programação dos métodos de busca e ordenação buble Sort, insertion sort e selection sort
-[ ] 3. Programação com criação de elementos dinâmicos (create.element e appendChild)
-[ ] 4. Exemplo de programa com o laço FOR
-[ ] 5. Exemplo de programa com o laço WHILE
-[ ] 6. Exemplo de programa com estrutura IF, ELSE e ELSE-IF
+[x] 2. programação dos métodos de busca e ordenação buble Sort, insertion sort e selection sort
+[ ] 3. Programação com criação de elementos dinâmicos (createElement e appendChild)
+[x] 4. Exemplo de programa com o laço FOR
+[x] 5. Exemplo de programa com o laço WHILE
+[x] 6. Exemplo de programa com estrutura IF, ELSE e ELSE-IF
 [ ] 7. Filmagem da explicação dos métodos de ordenação
-[ ] 8. programas de ordem crescente e decrescente
+[x] 8. programas de ordem crescente e decrescente

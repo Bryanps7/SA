@@ -6,7 +6,12 @@ function setValueRandom(max, min) {
 let pushNumberNPC = document.querySelector('#getNPC')
 
 pushNumberNPC.addEventListener('click', ()=>{
-    let display = document.querySelector('#execute-NPC')
+    let screen = document.createElement('dive')
+    
+    screen.setAttribute('id', 'execute-NPC')
+    screen.setAttribute('class', 'screen')
+    screen.style.display = 'flex'
+
     let number = setValueRandom(100, 1)
     let divisible = []
     let given = ''
@@ -23,8 +28,12 @@ pushNumberNPC.addEventListener('click', ()=>{
         given = 'Primo'
     }
 
-    display.style.display = 'flex'
-    display.innerHTML = `O número sorteado é: ${number}. <br>`
-    display.innerHTML += `O número é: ${given}. <br>`
-    display.innerHTML += `Seus divisores são: [ ${divisible.join(', ')} ]`
+    screen.innerHTML = `O número sorteado é: ${number}. <br>`
+    screen.innerHTML += `O número é: ${given}. <br>`
+    screen.innerHTML += `Seus divisores são: [ ${divisible.join(', ')} ]`
+
+    if(document.querySelector('#execute-NPC')) {
+        document.querySelector('#npc').removeChild(screen)
+    }
+    document.querySelector('#npc').appendChild(screen)
 })

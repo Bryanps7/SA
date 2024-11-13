@@ -11,9 +11,11 @@ pushNumberFat.addEventListener('click', ()=>{
     let arrayFatorial = []
     let fatorial = 1
 
-    for(let i = number; i >= 1; i--) {
-        arrayFatorial.push(i)
-        fatorial *= i
+    let cont = number
+    while(cont > 0) {
+        arrayFatorial.push(cont)
+        fatorial *= cont
+        cont--
     }
 
     display.style.display = 'flex'

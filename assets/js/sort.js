@@ -29,6 +29,19 @@ function bubbleSort(array) {
     return cont++
 }
 
+function bubbleInvert(array) {
+    for (let j = array.length - 1; j > 0; j--) {
+        for (let i = 0; i < array.length - 1; i++) {
+            if (array[i] < array[i + 1]) {
+                let guard = array[i]
+                array[i] = array[i + 1]
+                array[i + 1] = guard
+            }
+        }
+    }
+    return array
+}
+
 function selectionSort(array) {
     let cont = 0
     for (let i = 0; i < array.length; i++) {
@@ -48,6 +61,23 @@ function selectionSort(array) {
     return cont
 }
 
+function selectionInvert(array) {
+    for (let i = 0; i < array.length; i++) {
+        let menor = i
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[j] > array[menor]) {
+                menor = j
+            }
+        }
+        if (i != menor) {
+            let guard = array[i]
+            array[i] = array[menor]
+            array[menor] = guard
+        }
+    }
+    return array
+}
+
 function insertSort(array) {
     let cont = 0
     for (let i = 0; i < array.length; i++) {
@@ -63,6 +93,19 @@ function insertSort(array) {
     return cont
 }
 
+function insertInvert(array) {
+    for (let i = 0; i < array.length; i++) {
+        let j = i - 1
+        let guard = array[i]
+        while (j >= 0 && guard > array[JSON]) {
+            array[j + 1] = array[j]
+            j--
+        }
+        array[j + 1] = guard
+    }
+    return array
+}
+
 pushNumberOrd.addEventListener('click', ()=>{
     let display = document.querySelector('#execute-Ord')
     let array = setArrayRandom(50, 1, 10)
@@ -75,7 +118,8 @@ pushNumberOrd.addEventListener('click', ()=>{
     let insertCont = insertSort(insert)
 
     display.style.display = 'flex' 
-    display.innerHTML += `Array Organizada: [ ${array.join(', ')} ]. <br>`
+    display.innerHTML += `Array Organizada crescente: [ ${array.join(', ')} ]. <br>`
+    display.innerHTML += `Array Organizada descrescente: [ ${bubbleInvert(array).join(', ')} ]. <br>`
     display.innerHTML += `Voltas com bubble: ${bubbleCont}. <br>`
     display.innerHTML += `Voltas com selection: ${selectionCont}. <br>`
     display.innerHTML += `Voltas com insert: ${insertCont}. <br>`

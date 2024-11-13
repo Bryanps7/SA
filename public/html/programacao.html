@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Programação | Prinz Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="/public/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/scroll.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/aside.css">
+
+    <link rel="stylesheet" href="/assets/css/pagin.css">
+    
+    <script src="/assets/js/header.js" defer></script>
+
+    <script src="/assets/js/num-primos-compostos.js" defer></script>
+    <script src="/assets/js/num-fatorial.js" defer></script>
+    <script src="/assets/js/sort.js" defer></script>
+    <script src="/assets/js/screenShow.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html" id="logo">
+            <img src="/assets/imgs/icon/Prinz-code-simple.svg" alt="logo">
+        </a>
+        
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="/index.html">Home</a>
+            <a href="/public/html/programacao.html">Programação</a>
+            <a href="/public/html/redes.html">Fundamentos de Redes</a>
+            <a href="/public/html/banco-de-dados.html">Banco de Dados</a>
+            <a href="/public/html/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h1 id="home">Programação</h1>
+            <hr>
+            <p>Está página mostra exemplos de códigos desenvolvidos em sala, aonde você pode rodar e ver funcionando e consegue analisar o código usado.</p>
+        </section>
+        
+        <section class="exercicio" id="npc">
+            <h2 id="text-npc">Números Primos e Compostos</h2>
+            <p>Esse programa fornecerá um número aleatório entre 1 à 100, e vai verificar se o número é primo ou composto e quais são seus divisores.</p>
+            <button id="getNPC">Executar</button>
+            <button onclick="showScreen('code-NPC')">Mostrar Código</button>
+            <div class="screen" id="code-NPC" style="display: none;">
+                <pre>
+nada ainda
+                </pre>
+            </div>
+            <!-- <div class="screen" id="execute-NPC" style="display: none;"></div> -->
+        </section>
+
+        <section class="exercicio" id="fat">
+            <h2 id="text-fat">Fatorial</h2>
+            <p>Esse programa fornecerá um número aleatório entre 1 à 50, e vai fatorar ele.</p>
+            <button id="getFat">Executar</button>
+            <button onclick="showScreen('code-Fat')">Mostrar Código</button>
+            <div class="screen" id="code-Fat" style="display: none;">
+                <pre>
+nada ainda                    
+                </pre>
+            </div>
+            <div class="screen" id="execute-Fat" style="display: none;"></div>
+        </section>
+
+        <section class="exercicio" id="ord">
+            <h2 id="text-ord">Métodos de Ordenação</h2>
+            <p>Esse programa criará um array de 10 elementos com valores aleatórios entre 1 à 50 e colocará em ordem crescente, Usando 3 métodos de ordenação: BubbleSort, SelectionSort e InsertSort. E contará quantas voltas cada um dá para saber qual o mais eficiente.</p>
+            <button id="getOrd">Executar</button>
+            <button onclick="showScreen('code-Ord')">Mostrar Código</button>
+            <div class="screen" id="code-Ord" style="display: none;">
+                <pre>
+nada ainda
+                </pre>
+            </div>
+            <div class="screen" id="execute-Ord" style="display: none;"></div>
+        </section>
+
+        <section class="exercicio">
+            <h2 id="3">3° exercicio da Prova de Programação</h2>
+            <p>Elabore um programa que gera uma matriz 8 x 8 de números aleatórios em um intervalo de 1 à 50. Faça a soma dos elementos das colunas cujos os índices são ímpares. Use o laço “for” para elaborar a lógica do programa. Apresente o resultado usando o comando console.table.</p>
+            <button id="get3">Executar</button>
+            <button onclick="showScreen('code-3')">Mostrar Código</button>
+            <div class="screen" id="code-3" style="display: none;">
+                <pre>
+nada ainda
+                </pre>
+            </div>
+            <div class="screen" id="execute-3" style="display: none;"></div>
+        </section>
+
+        <section class="exercicio">
+            <h2 id="ord">Métodos de Ordenação</h2>
+            <p>Esse programa criará um array de 10 elementos com valores aleatórios entre 1 à 50 e colocará em ordem crescente, Usando 3 métodos de ordenação: BubbleSort, SelectionSort e InsertSort. E contará quantas voltas cada um dá para saber qual o mais eficiente.</p>
+            <button id="getOrd">Executar</button>
+            <button onclick="showScreen('code-Ord')">Mostrar Código</button>
+            <div class="screen" id="code-Ord" style="display: none;">
+                <pre>
+nada ainda
+                </pre>
+            </div>
+            <div class="screen" id="execute-Ord" style="display: none;"></div>
+        </section>
+
+        <section class="exercicio">
+            <h2 id="ord">Métodos de Ordenação</h2>
+            <p>Esse programa criará um array de 10 elementos com valores aleatórios entre 1 à 50 e colocará em ordem crescente, Usando 3 métodos de ordenação: BubbleSort, SelectionSort e InsertSort. E contará quantas voltas cada um dá para saber qual o mais eficiente.</p>
+            <button id="getOrd">Executar</button>
+            <button onclick="showScreen('code-Ord')">Mostrar Código</button>
+            <div class="screen" id="code-Ord" style="display: none;">
+                <pre>
+nada ainda
+                </pre>
+            </div>
+            <div class="screen" id="execute-Ord" style="display: none;"></div>
+        </section>
+    </main>
+    <aside>
+        <a href="#home"><h3>Começo</h3></a>
+        <a href="#npc"><h3>Números Primos e Compostos</h3></a>
+        <a href="#fat"><h3>Fatorial</h3></a>
+        <a href="#bub"><h3>Bubble Sort</h3></a>
+    </aside>
+    <footer>
+        <div class="direitos">
+            <p>Todos os direitos reservados &copy;</p> <span id="dash">-</span> <p>Bryan Prinz / Prinz Code</p>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/Bryanps7"><img src="/assets/imgs/svg/github.svg" alt="logo github"></a>
+            <a href="https://api.whatsapp.com/send?phone=48991375142"><img src="/assets/imgs/svg/mensage.svg" alt="logo para o whatsapp"></a>
+            <a href="https://www.google.com/maps/search/sesi+tijucas/@-27.2305002,-48.6326707,19z?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"><img src="/assets/imgs/svg/location.svg" alt="icone de localização"></a>
+        </div>
+    </footer>
+</body>
+</html>
