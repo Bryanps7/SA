@@ -18,7 +18,7 @@ function melhora(path) {
     img.setAttribute('src', path)
     img.setAttribute('onclick', 'sair()')
     img.setAttribute('title', 'Clique novamente para sair')
-    img.style.width = '80%'
+    img.style.width = '90%'
 
     scren.appendChild(img)
 

@@ -62,6 +62,12 @@ main .famoso40 {
     width: 40%;
 }
 
+main .famoso20 {
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 20%;
+}
+
 main section .div-dupla {
     display: flex;
     justify-content: space-between;
@@ -92,11 +98,32 @@ main section p {
     margin: 0 10px;
 }
 
+.dancaGatinho {
+    width: 20%;
+    animation: spin 4s linear infinite;
+}
+
+.dividePor5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dividePor5 div {
+    text-align: center;
+    flex-basis: 200px;
+}
+
+.dividePor5 div img {
+    width: 100%;
+}
+
 @media (width <=923px) {
     main {
         height: calc(100vh - 280px);
         order: 1;
     }
+
 }
 
 @media (width <=717px) {
@@ -109,8 +136,14 @@ main section p {
         margin-top: 10px;
         width: 100%;
     }
-    
+
     main .famoso40 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    main .famoso20 {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
@@ -118,6 +151,10 @@ main section p {
 
     main section p {
         text-align: justify;
+    }
+    
+    .dancaGatinho {
+        width: 100%;
     }
 
     main section .div-dupla {
@@ -142,4 +179,33 @@ main section p {
     padding: 5px 10px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+ul {
+    margin-left: 30px;
+}
+
+li {
+    font-size: 0.9rem;
 }

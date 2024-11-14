@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Fluxogramas | Prinz Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="/public/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/scroll.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/aside.css">
+
+    <link rel="stylesheet" href="/assets/css/pagin.css">
+    
+    <script src="/assets/js/header.js" defer></script>
+    <script src="/assets/js/betterView.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html" id="logo">
+            <img src="/assets/imgs/icon/Prinz-code-simple.svg" alt="logo">
+        </a>
+        
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="/public/html/programacao.html">Programação</a>
+            <a href="/public/html/redes.html">Fundamentos de Redes</a>
+            <a href="/public/html/eletronica.html">Eletrônica</a>
+            <a href="/public/html/banco-de-dados.html">Banco de Dados</a>
+            <a href="/public/html/fluxograma.html">Fluxogramas</a>
+            <a href="/public/html/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="title" id="home">
+            <h1 id="text-home">Fluxogramas</h1>
+            <hr>
+            <p>
+                Na página de fluxogramas, o cliente encontrará exemplos de fluxogramas prontos, explicações sobre diferentes tipos (como fluxogramas de processos e de sistemas), uma lista de símbolos padrão usados, sugestões de ferramentas para criação, e dicas para montar diagramas claros e eficientes. Isso ajuda na organização e comunicação de processos em diversas áreas.</p>
+        </section>
+
+        <section class="fluxograma" id="desFlu">
+            <h2 id="text-desFlu">Exemplo dos algoritmos que a PrinzCode implementa</h2>
+            <hr>
+            <p>Um fluxograma pode representar visualmente o funcionamento dos algoritmos que uma empresa utiliza, permitindo ver o fluxo de entrada de dados, o processamento em cada etapa e os resultados finais. Isso ajuda a simplificar o entendimento dos processos e a identificar pontos de otimização.</p>
+            <hr>
+            <img width="100%" src="/assets/imgs/fluxo/fluxo-exemplo.jpg" onclick="melhora('/assets/imgs/fluxo/fluxo-exemplo.jpg')" title="Clique para uma Melhor Visualização" alt="Exemplo de Fluxograma da Empresa">
+        </section>
+
+        <section class="fluxograma" id="simbologia">
+            <h2 id="text-simbologia">Simbologia de fluxograma</h2>
+            <hr>
+            <p>A simbologia padrão de fluxogramas inclui:</p>
+            <div class="dividePor5">
+                <div>
+                    <h6>Oval</h6>
+                    <p>Início e fim do processo.</p>
+                    <img src="/assets/imgs/fluxo/oval.png" alt="Oval">
+                </div>
+                <div>
+                    <h6>Retângulo</h6>
+                    <p>Indica uma ação ou processo.</p>
+                    <img src="/assets/imgs/fluxo/retangulo.png" alt="Retângulo">
+                </div>
+                <div>
+                    <h6>Losango</h6>
+                    <p>Representa uma decisão com caminhos possíveis.</p>
+                    <img src="/assets/imgs/fluxo/losangulo.png" alt="Losango">
+                </div>
+                <div>
+                    <h6>Setas</h6>
+                    <p>Direcionam o fluxo do processo.</p>
+                    <img src="/assets/imgs/fluxo/setas.png" alt="Setas">
+                </div>
+                <div>
+                    <h6>Paralelograma</h6>
+                    <p>Representa entrada e saída de dados.</p>
+                    <img src="/assets/imgs/fluxo/paralelograma.png" alt="Paralelograma">
+                </div>
+            </div>
+        </section>
+
+        <section class="fluxograma" id="bubbleSort">
+            <h2 id="text-bubbleSort">Fluxograma do Bubble Sort</h2>
+            <hr>
+            <p>Mostra cada comparação e troca de elementos vizinhos, repetindo até que o array esteja ordenado.</p>
+            <img src="/assets/imgs/fluxo/fluxo-bubble.jpg" onclick="melhora('/assets/imgs/fluxo/fluxo-bubble.jpg')" title="Clique para uma Melhor Visualização" alt="bubbleSort" width="100%">
+        </section>
+        
+        <section class="fluxograma" id="selectionSort">
+            <h2 id="text-selectionSort">Fluxograma do SelectionSort</h2>
+            <hr>
+            <p>demonstra a busca do menor elemento em cada iteração e sua troca para ordenar a lista.</p>
+            <img src="/assets/imgs/fluxo/fluxo-selection.jpg" onclick="melhora('/assets/imgs/fluxo/fluxo-selection.jpg')" title="Clique para uma Melhor Visualização" alt="bubbleSort" width="100%">
+        </section>
+        
+        <section class="fluxograma" id="insertionSort">
+            <h2 id="text-insertionSort">Fluxograma do InsertionSort</h2>
+            <hr>
+            <p>Representa a seleção e inserção ordenada de cada elemento, ajustando o restante dos elementos para ordenar.</p>
+            <img src="/assets/imgs/fluxo/fluxo-insert.jpg" onclick="melhora('/assets/imgs/fluxo/fluxo-insert.jpg')" title="Clique para uma Melhor Visualização" alt="bubbleSort" width="100%">
+        </section>
+        
+        <section class="fluxograma" id="par&impar">
+            <h2 id="text-par&impar">Fluxograma com array de pares e ímpares</h2>
+            <hr>
+            <p>Este fluxograma exemplifica como um algoritmo separa números e ímpares em um array. O processo inclui percorrer cada número, verifique se é par ou ímpar e direcione-o para a lista correspondente.</p>
+            <img src="/assets/imgs/fluxo/fluxo-array-parImpar.jpg" onclick="melhora('/assets/imgs/fluxo/fluxo-array-parImpar.jpg')" title="Clique para uma Melhor Visualização" alt="bubbleSort" width="100%">
+        </section>
+
+        <section class="fluxograma" id="exeSite">
+            <h2 id="text-exeSite">Exemplo de software para fazer fluxograma</h2>
+            <hr>
+            <p>Lucidchart é uma ferramenta online usada para criar fluxogramas. É intuitivo e permite arrastar e soltar elementos, além de oferecer modelos prontos e de compartilhamento colaborativo, sendo ideal para criar fluxogramas de algoritmos e processos empresariais.</p>
+        </section>
+    </main>
+    <aside>
+        <h2>Tópicos:</h2>
+        <a href="#home"><h3>Começo</h3></a>
+        <a href="#desFlu"><h3>Exemplo de Fluxogramas</h3></a>
+        <a href="#simbologia"><h3>Simbologia do Fluxograma</h3></a>
+        <a href="#bubbleSort"><h3>bubbleSort</h3></a>
+        <a href="#selectionSort"><h3>selectionSort</h3></a>
+        <a href="#insertionSort"><h3>insertionSort</h3></a>
+        <a href="#par&impar"><h3>Array com Par e Impar</h3></a>
+        <a href="#exeSite"><h3>Exemplo de Site para fazer Fluxogramas</h3></a>
+    </aside>
+    <footer>
+        <div class="direitos">
+            <p>Todos os direitos reservados &copy;</p> <span id="dash">-</span> <p>Bryan Prinz / Prinz Code</p>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/Bryanps7"><img src="/assets/imgs/svg/github.svg" alt="logo github"></a>
+            <a href="https://api.whatsapp.com/send?phone=48991375142"><img src="/assets/imgs/svg/mensage.svg" alt="logo para o whatsapp"></a>
+            <a href="https://www.google.com/maps/search/sesi+tijucas/@-27.2305002,-48.6326707,19z?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"><img src="/assets/imgs/svg/location.svg" alt="icone de localização"></a>
+        </div>
+    </footer>
+</body>
+</html>
