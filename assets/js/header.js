@@ -2,6 +2,14 @@ const openMenu = document.getElementById('openMenu')
 const closeMenu = document.getElementById('closeMenu')
 const menu = document.getElementById('menu')
 
+window.addEventListener('resize', ()=> {
+    if(window.innerWidth > 717) {
+        openMenu.style.display = 'none'
+    } else {
+        openMenu.style.display = 'flex'
+    }
+})
+
 openMenu.addEventListener('click', ()=>{
     menu.style.display = 'flex'
     menu.style.right = (menu.offsetWidth * -1) + '1px'

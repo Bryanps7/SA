@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/aside.css">
 
-    <link rel="stylesheet" href="/assets/css/pagin.css">
+    <link rel="stylesheet" href="/assets/css/prog.css">
     
     <script src="/assets/js/header.js" defer></script>
 
@@ -20,6 +20,9 @@
     <script src="/assets/js/num-fatorial.js" defer></script>
     <script src="/assets/js/sort.js" defer></script>
     <script src="/assets/js/screenShow.js" defer></script>
+    <script src="/assets/js/q01.js" defer></script>
+    <script src="/assets/js/q02.js" defer></script>
+    <script src="/assets/js/q05.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,20 +37,22 @@
             <a href="/index.html">Home</a>
             <a href="/public/html/programacao.html">Programação</a>
             <a href="/public/html/redes.html">Fundamentos de Redes</a>
+            <a href="/public/html/eletronica.html">Eletrônica</a>
             <a href="/public/html/banco-de-dados.html">Banco de Dados</a>
             <a href="/public/html/contato.html">Contato</a>
         </nav>
     </header>
     <main>
-        <section class="title">
-            <h1 id="home">Programação</h1>
+        <section class="title" id="home">
+            <h1 id="text-home">Programação</h1>
             <hr>
             <p>Está página mostra exemplos de códigos desenvolvidos em sala, aonde você pode rodar e ver funcionando e consegue analisar o código usado.</p>
         </section>
         
         <section class="exercicio" id="npc">
             <h2 id="text-npc">Números Primos e Compostos</h2>
-            <p>Esse programa fornecerá um número aleatório entre 1 à 100, e vai verificar se o número é primo ou composto e quais são seus divisores.</p>
+            <hr>
+            <p>Esse programa fornecerá um número aleatório entre 1 à 100, e vai verificar se o número é primo ou composto e quais são seus divisores. Utilizando Laço For e estrutura if-else.</p>
             <button id="getNPC">Executar</button>
             <button onclick="showScreen('code-NPC')">Mostrar Código</button>
             <div class="screen" id="code-NPC" style="display: none;">
@@ -55,79 +60,85 @@
 nada ainda
                 </pre>
             </div>
-            <!-- <div class="screen" id="execute-NPC" style="display: none;"></div> -->
         </section>
 
         <section class="exercicio" id="fat">
             <h2 id="text-fat">Fatorial</h2>
-            <p>Esse programa fornecerá um número aleatório entre 1 à 50, e vai fatorar ele.</p>
+            <hr>
+            <p>Esse programa fornecerá um número aleatório entre 1 à 50, e vai fatorar ele. Utilizando Laço While</p>
             <button id="getFat">Executar</button>
-            <button onclick="showScreen('code-Fat')">Mostrar Código</button>
-            <div class="screen" id="code-Fat" style="display: none;">
+            <button onclick="showScreen('code-fat')">Mostrar Código</button>
+            <div class="screen" id="code-fat" style="display: none;">
                 <pre>
 nada ainda                    
                 </pre>
             </div>
-            <div class="screen" id="execute-Fat" style="display: none;"></div>
         </section>
 
-        <section class="exercicio" id="ord">
-            <h2 id="text-ord">Métodos de Ordenação</h2>
-            <p>Esse programa criará um array de 10 elementos com valores aleatórios entre 1 à 50 e colocará em ordem crescente, Usando 3 métodos de ordenação: BubbleSort, SelectionSort e InsertSort. E contará quantas voltas cada um dá para saber qual o mais eficiente.</p>
-            <button id="getOrd">Executar</button>
-            <button onclick="showScreen('code-Ord')">Mostrar Código</button>
-            <div class="screen" id="code-Ord" style="display: none;">
+        <section class="exercicio" id="sorteio">
+            <div id="sort">
+                <h2 id="text-sort">Métodos de Ordenação</h2>
+                <hr>
+                <p>Esse programa criará um array de 10 elementos com valores aleatórios entre 1 à 50 e colocará em ordem crescente, Usando 3 métodos de ordenação: BubbleSort, SelectionSort e InsertSort. E contará quantas voltas cada um dá para saber qual o mais eficiente.</p>
+                <button id="getSort">Executar</button>
+                <button onclick="showScreen('code-sort')">Mostrar Código</button>
+                <div class="screen" id="code-sort" style="display: none;">
+                    <pre>
+                        nada ainda
+                    </pre>
+                </div>
+            </div>
+            <iframe src="https://www.youtube.com/embed/fp6YW1oTE6M?si=xzgyCABNsxzCd1-N" title="Método BubbleSort" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="exercicio" id="ex1">
+            <h2 id="text-ex1">1° exercicio da Prova de Programação</h2>
+            <hr>
+            <p>Elabore um programa que gera duas matrizes uma matriz 7 x 7, sendo uma do tipo do tipo diagonal secundária, cujos os elementos da diagonal secundária são iguais a 5 e outra matriz diagonal principal, cujos elementos são iguais a 7. Após gerar as duas matrizes, faça a soma entre elas. Use o laço “for” para elaborar a lógica do programa. Apresente o resultado usando o comando console.table.</p>
+            <button id="getEx1">Executar</button>
+            <button onclick="showScreen('code-ex1')">Mostrar Código</button>
+            <div class="screen" id="code-ex1" style="display: none;">
                 <pre>
 nada ainda
                 </pre>
             </div>
-            <div class="screen" id="execute-Ord" style="display: none;"></div>
         </section>
 
-        <section class="exercicio">
-            <h2 id="3">3° exercicio da Prova de Programação</h2>
-            <p>Elabore um programa que gera uma matriz 8 x 8 de números aleatórios em um intervalo de 1 à 50. Faça a soma dos elementos das colunas cujos os índices são ímpares. Use o laço “for” para elaborar a lógica do programa. Apresente o resultado usando o comando console.table.</p>
-            <button id="get3">Executar</button>
-            <button onclick="showScreen('code-3')">Mostrar Código</button>
-            <div class="screen" id="code-3" style="display: none;">
+        <section class="exercicio" id="ex2">
+            <h2 id="text-ex2">2° exercicio da Prova de Programação</h2>
+            <hr>
+            <p>Elabore um programa que gera uma matriz 7 x 7 com números aleatórios em um intervalo de 1 à 20. Após gerar a matriz, faça a soma dos números pares e ímpares da matriz separadamente. Use o laço “for” para elaborar a lógica do programa. Apresente o resultado usando o comando console.table para a matriz e console.log para as somas.</p>
+            <button id="getEx2">Executar</button>
+            <button onclick="showScreen('code-ex2')">Mostrar Código</button>
+            <div class="screen" id="code-ex2" style="display: none;">
                 <pre>
 nada ainda
                 </pre>
             </div>
-            <div class="screen" id="execute-3" style="display: none;"></div>
         </section>
 
-        <section class="exercicio">
-            <h2 id="ord">Métodos de Ordenação</h2>
-            <p>Esse programa criará um array de 10 elementos com valores aleatórios entre 1 à 50 e colocará em ordem crescente, Usando 3 métodos de ordenação: BubbleSort, SelectionSort e InsertSort. E contará quantas voltas cada um dá para saber qual o mais eficiente.</p>
-            <button id="getOrd">Executar</button>
-            <button onclick="showScreen('code-Ord')">Mostrar Código</button>
-            <div class="screen" id="code-Ord" style="display: none;">
+        <section class="exercicio" id="ex5">
+            <h2 id="text-ex5">5° exercicio da Prova de Programação</h2>
+            <hr>
+            <p>Elabore um programa que cria uma fila em um array de 9 elementos, começando cujo primeiro elemento da fila é igual à 1 e o último é igual a 9. Posteriormente, elaborar uma lógica que converta os elementos da fila em uma matriz 3 x 3, cujo primeiro elemento da matriz com índice [0][0] seja igual a 1 e o último elemento [3][3] seja igual a 9. Use o laço “for” para elaborar a lógica do programa. Apresente o resultado usando o comando console.table.</p>
+            <button id="getEx5">Executar</button>
+            <button onclick="showScreen('code-ex5')">Mostrar Código</button>
+            <div class="screen" id="code-ex5" style="display: none;">
                 <pre>
 nada ainda
                 </pre>
             </div>
-            <div class="screen" id="execute-Ord" style="display: none;"></div>
-        </section>
-
-        <section class="exercicio">
-            <h2 id="ord">Métodos de Ordenação</h2>
-            <p>Esse programa criará um array de 10 elementos com valores aleatórios entre 1 à 50 e colocará em ordem crescente, Usando 3 métodos de ordenação: BubbleSort, SelectionSort e InsertSort. E contará quantas voltas cada um dá para saber qual o mais eficiente.</p>
-            <button id="getOrd">Executar</button>
-            <button onclick="showScreen('code-Ord')">Mostrar Código</button>
-            <div class="screen" id="code-Ord" style="display: none;">
-                <pre>
-nada ainda
-                </pre>
-            </div>
-            <div class="screen" id="execute-Ord" style="display: none;"></div>
         </section>
     </main>
     <aside>
+        <h2>Tópicos:</h2>
         <a href="#home"><h3>Começo</h3></a>
         <a href="#npc"><h3>Números Primos e Compostos</h3></a>
         <a href="#fat"><h3>Fatorial</h3></a>
-        <a href="#bub"><h3>Bubble Sort</h3></a>
+        <a href="#sorteio"><h3>Métodos de Ordenação</h3></a>
+        <a href="#ex1"><h3>1° exercicio da Prova</h3></a>
+        <a href="#ex2"><h3>2° exercicio da Prova</h3></a>
+        <a href="#ex5"><h3>5° exercicio da Prova</h3></a>
     </aside>
     <footer>
         <div class="direitos">

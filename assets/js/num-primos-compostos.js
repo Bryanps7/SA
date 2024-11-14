@@ -6,7 +6,7 @@ function setValueRandom(max, min) {
 let pushNumberNPC = document.querySelector('#getNPC')
 
 pushNumberNPC.addEventListener('click', ()=>{
-    let screen = document.createElement('dive')
+    let screen = document.createElement('div')
     
     screen.setAttribute('id', 'execute-NPC')
     screen.setAttribute('class', 'screen')
@@ -32,8 +32,9 @@ pushNumberNPC.addEventListener('click', ()=>{
     screen.innerHTML += `O número é: ${given}. <br>`
     screen.innerHTML += `Seus divisores são: [ ${divisible.join(', ')} ]`
 
-    if(document.querySelector('#execute-NPC')) {
-        document.querySelector('#npc').removeChild(screen)
+    let existingScreen = document.querySelector('#execute-NPC')
+    if(existingScreen) {
+        document.querySelector('#npc').removeChild(existingScreen)
     }
     document.querySelector('#npc').appendChild(screen)
 })

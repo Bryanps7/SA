@@ -12,7 +12,7 @@ function setValueRandom(max, min) {
     return random;
 }
 
-let pushNumberOrd = document.querySelector('#getOrd')
+let pushNumberSort = document.querySelector('#getSort')
 
 function bubbleSort(array) {
     let cont = 0
@@ -106,10 +106,15 @@ function insertInvert(array) {
     return array
 }
 
-pushNumberOrd.addEventListener('click', ()=>{
-    let display = document.querySelector('#execute-Ord')
+pushNumberSort.addEventListener('click', ()=>{
+    let screen = document.createElement('div')
+    
+    screen.setAttribute('id', 'execute-sort')
+    screen.setAttribute('class', 'screen')
+    screen.style.display = 'flex' 
+
     let array = setArrayRandom(50, 1, 10)
-    display.innerHTML = `A Array Sorteada é: [ ${array.join(', ')} ]. <br>`
+    screen.innerHTML = `A Array Sorteada é: [ ${array.join(', ')} ]. <br>`
     
     let bubble = array, selection = array, insert = array
 
@@ -117,10 +122,15 @@ pushNumberOrd.addEventListener('click', ()=>{
     let selectionCont = selectionSort(selection)
     let insertCont = insertSort(insert)
 
-    display.style.display = 'flex' 
-    display.innerHTML += `Array Organizada crescente: [ ${array.join(', ')} ]. <br>`
-    display.innerHTML += `Array Organizada descrescente: [ ${bubbleInvert(array).join(', ')} ]. <br>`
-    display.innerHTML += `Voltas com bubble: ${bubbleCont}. <br>`
-    display.innerHTML += `Voltas com selection: ${selectionCont}. <br>`
-    display.innerHTML += `Voltas com insert: ${insertCont}. <br>`
+    screen.innerHTML += `Array Organizada crescente: [ ${array.join(', ')} ]. <br>`
+    screen.innerHTML += `Array Organizada descrescente: [ ${bubbleInvert(array).join(', ')} ]. <br>`
+    screen.innerHTML += `Voltas com bubble: ${bubbleCont}. <br>`
+    screen.innerHTML += `Voltas com selection: ${selectionCont}. <br>`
+    screen.innerHTML += `Voltas com insert: ${insertCont}. <br>`
+
+    let existingScreen = document.querySelector('#execute-sort')
+    if (existingScreen) {
+        document.querySelector('#sort').removeChild(existingScreen)
+    }
+    document.querySelector('#sort').appendChild(screen)
 })

@@ -6,7 +6,12 @@ function setValueRandom(max, min) {
 let pushNumberFat = document.querySelector('#getFat')
 
 pushNumberFat.addEventListener('click', ()=>{
-    let display = document.querySelector('#execute-Fat')
+    let screen = document.createElement('div')
+    
+    screen.setAttribute('id', 'execute-fat')
+    screen.setAttribute('class', 'screen')
+    screen.style.display = 'flex'
+
     let number = setValueRandom(50, 1)
     let arrayFatorial = []
     let fatorial = 1
@@ -18,8 +23,13 @@ pushNumberFat.addEventListener('click', ()=>{
         cont--
     }
 
-    display.style.display = 'flex'
-    display.innerHTML = `O número sorteado é: ${number}! <br>`
-    display.innerHTML += `Seu fatorial é: ${fatorial}. <br>`
-    display.innerHTML += `Cálculo: ${number}! = ${arrayFatorial.join(' * ')} = ${fatorial}`
+    screen.innerHTML = `O número sorteado é: ${number}! <br>`
+    screen.innerHTML += `Seu fatorial é: ${fatorial}. <br>`
+    screen.innerHTML += `Cálculo: ${number}! = ${arrayFatorial.join(' * ')} = ${fatorial}`
+
+    let existingScreen = document.querySelector('#execute-fat')
+    if(existingScreen) {
+        document.querySelector('#fat').removeChild(existingScreen)
+    }
+    document.querySelector('#fat').appendChild(screen)
 })
