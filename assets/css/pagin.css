@@ -46,7 +46,7 @@ main .famoso80 {
     margin-left: 10px;
 }
 
-main .famoso80 img {
+.famoso80 img, .famoso40 img, .famoso20 img {
     width: 100%;
     border-radius: 5px;
 }
@@ -60,6 +60,16 @@ main .famoso40 {
     border-radius: 5px;
     margin-left: 10px;
     width: 40%;
+}
+
+.famoso120 {
+    width: 120%;
+    margin-left: 10px;
+}
+
+.famoso120 video {
+    width: 100%;
+    border-radius: 5px;
 }
 
 main .famoso20 {
@@ -103,7 +113,7 @@ main section p {
     animation: spin 4s linear infinite;
 }
 
-.dividePor5 {
+.dividePor5, .dividePor3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -114,8 +124,13 @@ main section p {
     flex-basis: 200px;
 }
 
-.dividePor5 div img {
+.dividePor5 div img, .dividePor3 div img {
     width: 100%;
+}
+
+.dividePor3 div {
+    text-align: center;
+    flex-basis: 330px;
 }
 
 @media (width <=923px) {
@@ -131,22 +146,10 @@ main section p {
         display: block;
     }
 
-    main .famoso80 {
+    main .famoso80, main .famoso40, main .famoso20 {
         margin-left: 0;
         margin-top: 10px;
         width: 100%;
-    }
-
-    main .famoso40 {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    main .famoso20 {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 10px;
     }
 
     main section p {
@@ -170,6 +173,10 @@ main section p {
         width: 30%;
         margin: 0 10px;
     }
+}
+
+.link-true {
+    font-size: 1rem;
 }
 
 .screen {

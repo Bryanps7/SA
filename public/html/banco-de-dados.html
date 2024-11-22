@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <title>Banco de Dados | Prinz Code</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="/public/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/config.css">
     <link rel="stylesheet" href="/assets/css/scroll.css">
@@ -13,16 +14,17 @@
     <link rel="stylesheet" href="/assets/css/aside.css">
 
     <link rel="stylesheet" href="/assets/css/pagin.css">
-    
+
     <script src="/assets/js/header.js" defer></script>
     <script src="/assets/js/betterView.js" defer></script>
 </head>
+
 <body>
     <header>
         <a href="/index.html" id="logo">
             <img src="/assets/imgs/icon/Prinz-code-simple.svg" alt="logo">
         </a>
-        
+
         <button id="openMenu">&#9776;</button>
 
         <nav id="menu">
@@ -39,14 +41,19 @@
         <section class="title" id="home">
             <h1 id="text-home">Banco de Dados</h1>
             <hr>
-            <p>Na página sobre banco de dados, eu explico o que são bancos de dados, seus tipos (relacionais e não relacionais), e os conceitos básicos de modelagem, incluindo diagramas DER e MER. Também falo sobre o dicionário de dados, um documento que organiza e descreve cada elemento do banco.</p>
+            <p>Na página sobre banco de dados, eu explico o que são bancos de dados, seus tipos (relacionais e não
+                relacionais), e os conceitos básicos de modelagem, incluindo diagramas DER e MER. Também falo sobre o
+                dicionário de dados, um documento que organiza e descreve cada elemento do banco.</p>
         </section>
 
         <section class="banco; section-especial" id="oqebdd">
             <div>
                 <h2 id="text-oqebdd">O que são Bancos de Dados?</h2>
                 <hr>
-                <p>Um banco de dados é uma coleção organizada de informações que podem ser facilmente acessadas, gerenciadas e atualizadas. Ele é essencial para armazenar dados de forma estruturada e eficiente, possibilitando que sistemas e aplicativos recuperem e manipulem essas informações conforme necessário.</p>
+                <p>Um banco de dados é uma coleção organizada de informações que podem ser facilmente acessadas,
+                    gerenciadas e atualizadas. Ele é essencial para armazenar dados de forma estruturada e eficiente,
+                    possibilitando que sistemas e aplicativos recuperem e manipulem essas informações conforme
+                    necessário.</p>
             </div>
             <div class="famoso80">
                 <img src="/assets/imgs/bdd/oqebdd.png" alt="Banco de Dados">
@@ -60,38 +67,51 @@
             <div class="div-dupla">
                 <div>
                     <h2>Relacional</h2>
-                    <p>Bancos de dados relacionados são sistemas que organizam dados em tabelas, onde cada tabela armazena informações sobre um tipo de entidade, como clientes ou produtos. Eles utilizam SQL (Structured Query Language) para consultas e manter a integridade dos dados por meio de chaves primárias e estrangeiras.</p>
+                    <p>Bancos de dados relacionados são sistemas que organizam dados em tabelas, onde cada tabela
+                        armazena informações sobre um tipo de entidade, como clientes ou produtos. Eles utilizam SQL
+                        (Structured Query Language) para consultas e manter a integridade dos dados por meio de chaves
+                        primárias e estrangeiras.</p>
                     <img src="/assets/imgs/bdd/SQL.png" alt="SQL Relacional">
                 </div>
                 <div>
                     <h2>Não Relacional</h2>
-                    <p>Bancos de dados não relacionais, ou NoSQL, são sistemas de armazenamento de dados que não utilizam tabelas para organização. Eles são ideais para grandes volumes de dados e cenários onde a estrutura dos dados pode variar, sendo comuns em aplicações como redes sociais e grandes lojas online. Exemplos incluem MongoDB, Redis e Cassandra.</p>
+                    <p>Bancos de dados não relacionais, ou NoSQL, são sistemas de armazenamento de dados que não
+                        utilizam tabelas para organização. Eles são ideais para grandes volumes de dados e cenários onde
+                        a estrutura dos dados pode variar, sendo comuns em aplicações como redes sociais e grandes lojas
+                        online. Exemplos incluem MongoDB, Redis e Cassandra.</p>
                     <img src="/assets/imgs/bdd/noSQL.png" alt="noSQL não Relacional">
                 </div>
             </div>
         </section>
-        
+
         <section class="banco" id="diaDM">
             <h2 id="text-diaDM">Diagramas</h2>
             <hr>
             <div class="div-dupla">
                 <div>
                     <h2>Conceitual - DER</h2>
-                    <p>Um Diagrama Entidade-Relacionamento (DER) é uma representação gráfica de um banco de dados que mostra como as entidades (tabelas) estão relacionadas entre si, sem detalhar os campos específicos. Ele é usado para modelagem inicial e planejamento do banco de dados.</p>
-                    <img src="/assets/imgs/bdd/der.png" onclick="melhora('/assets/imgs/bdd/der.png')" id="der" alt="Modelo Conceitual" title="Clique para uma Melhor Visualização">
+                    <p>Um Diagrama Entidade-Relacionamento (DER) é uma representação gráfica de um banco de dados que
+                        mostra como as entidades (tabelas) estão relacionadas entre si, sem detalhar os campos
+                        específicos. Ele é usado para modelagem inicial e planejamento do banco de dados.</p>
+                    <img src="/assets/imgs/bdd/der.png" onclick="melhora('/assets/imgs/bdd/der.png',90)" id="der"
+                        alt="Modelo Conceitual" title="Clique para uma Melhor Visualização">
                 </div>
                 <div>
                     <h2>Lógico - MER</h2>
-                    <p>O Modelo Entidade-Relacionamento (MER) detalha logicamente o DER, incluindo as entidades, atributos e relacionamentos. É uma visão mais detalhada que define os campos e seus tipos de dados e mostra como os dados serão armazenados no banco de dados.</p>
-                    <img src="/assets/imgs/bdd/mer.png" onclick="melhora('/assets/imgs/bdd/mer.png')" id="mer" alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
+                    <p>O Modelo Entidade-Relacionamento (MER) detalha logicamente o DER, incluindo as entidades,
+                        atributos e relacionamentos. É uma visão mais detalhada que define os campos e seus tipos de
+                        dados e mostra como os dados serão armazenados no banco de dados.</p>
+                    <img src="/assets/imgs/bdd/mer.png" onclick="melhora('/assets/imgs/bdd/mer.png',90)" id="mer"
+                        alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
                 </div>
             </div>
         </section>
-        
+
         <section class="banco" id="bddEmpresa">
             <h2 id="text-bddEmpresa">Quais os banco de dados que a empresa trabalha?</h2>
             <hr>
-            <p>A Prinz Code&copy; trabalhar com bancos de dados relacionados como MySQL e PostgreSQL, dependendo das necessidades de cada aplicação o melhor banco de dados Será recomendado aos nossos clientes.</p>
+            <p>A Prinz Code&copy; trabalhar com bancos de dados relacionados como MySQL e PostgreSQL, dependendo das
+                necessidades de cada aplicação o melhor banco de dados Será recomendado aos nossos clientes.</p>
             <marquee class="roda-roda">
                 <img src="/assets/imgs/bdd/MySQL.png" alt="MySQL">
                 <img src="/assets/imgs/bdd/PostgreSQL.png" alt="PostgreSQL">
@@ -102,29 +122,50 @@
             <div>
                 <h2 id="oqedicidados">O que é um dicionário de dados?</h2>
                 <hr>
-                <p>Um dicionário de dados é um documento que descreve cada elemento do banco de dados, incluindo nomes de tabelas, campos, tipos de dados, e relacionamentos. Ele facilita a compreensão do banco para desenvolvedores e administradores e garante que todos tenham uma visão clara da estrutura dos dados.</p>
+                <p>Um dicionário de dados é um documento que descreve cada elemento do banco de dados, incluindo nomes
+                    de tabelas, campos, tipos de dados, e relacionamentos. Ele facilita a compreensão do banco para
+                    desenvolvedores e administradores e garante que todos tenham uma visão clara da estrutura dos dados.
+                </p>
             </div>
-            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png')" id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)" id="ddd"
+                alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
         </section>
     </main>
     <aside>
         <h2>Tópicos:</h2>
-        <a href="#home"><h3>Começo</h3></a>
-        <a href="#oqebdd"><h3>O que é Banco de Dados?</h3></a>
-        <a href="#tpbdd"><h3>Tipos de Banco</h3></a>
-        <a href="#diaDM"><h3>Diagramas</h3></a>
-        <a href="#bddEmpresa"><h3>BD da Empresa</h3></a>
-        <a href="#oqedicidados"><h3>O que é Dicionário de Dados?</h3></a>
+        <a href="#home">
+            <h3>Começo</h3>
+        </a>
+        <a href="#oqebdd">
+            <h3>O que é Banco de Dados?</h3>
+        </a>
+        <a href="#tpbdd">
+            <h3>Tipos de Banco</h3>
+        </a>
+        <a href="#diaDM">
+            <h3>Diagramas</h3>
+        </a>
+        <a href="#bddEmpresa">
+            <h3>BD da Empresa</h3>
+        </a>
+        <a href="#oqedicidados">
+            <h3>O que é Dicionário de Dados?</h3>
+        </a>
     </aside>
     <footer>
         <div class="direitos">
-            <p>Todos os direitos reservados &copy;</p> <span id="dash">-</span> <p>Bryan Prinz / Prinz Code</p>
+            <p>Todos os direitos reservados &copy;</p> <span id="dash">-</span>
+            <p>Bryan Prinz / Prinz Code</p>
         </div>
         <div class="redes">
             <a href="https://github.com/Bryanps7"><img src="/assets/imgs/svg/github.svg" alt="logo github"></a>
-            <a href="https://api.whatsapp.com/send?phone=48991375142"><img src="/assets/imgs/svg/mensage.svg" alt="logo para o whatsapp"></a>
-            <a href="https://www.google.com/maps/search/sesi+tijucas/@-27.2305002,-48.6326707,19z?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"><img src="/assets/imgs/svg/location.svg" alt="icone de localização"></a>
+            <a href="https://api.whatsapp.com/send?phone=48991375142"><img src="/assets/imgs/svg/mensage.svg"
+                    alt="logo para o whatsapp"></a>
+            <a
+                href="https://www.google.com/maps/search/sesi+tijucas/@-27.2305002,-48.6326707,19z?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"><img
+                    src="/assets/imgs/svg/location.svg" alt="icone de localização"></a>
         </div>
     </footer>
 </body>
+
 </html>

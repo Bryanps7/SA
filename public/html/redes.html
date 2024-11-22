@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Fundamentos de Redes | Prinz Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/public/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/scroll.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/aside.css">
+
+    <link rel="stylesheet" href="/assets/css/pagin.css">
+
+    <script src="/assets/js/header.js" defer></script>
+    <script src="/assets/js/betterView.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" id="logo">
+            <img src="/assets/imgs/icon/Prinz-code-simple.svg" alt="logo">
+        </a>
+
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="/public/html/programacao.html">Programação</a>
+            <a href="/public/html/redes.html">Fundamentos de Redes</a>
+            <a href="/public/html/eletronica.html">Eletrônica</a>
+            <a href="/public/html/banco-de-dados.html">Banco de Dados</a>
+            <a href="/public/html/fluxograma.html">Fluxogramas</a>
+            <a href="/public/html/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="title" id="home">
+            <h1 id="text-home">Fundamentos de Redes</h1>
+            <hr>
+            <p>A página de Redes é dedicada ao estudo e à aplicação de tecnologias que conectam dispositivos, permitindo a troca de informações de forma eficiente e segura. Aqui você encontrará conteúdos sobre a configuração de equipamentos de rede, como switches e roteadores, os principais protocolos utilizados (DNS, HTTP, FTP, SMTP, entre outros), e conceitos fundamentais como o modelo OSI e a pilha TCP/IP</p>
+        </section>
+
+        <!-- <section class="fund-redes" id="dispositivos">
+            <div>
+                <h2 id="text-dispositivos">Dispositivos para um Rede Interna</h2>
+                <hr>
+                <p>Uma rede interna típica com um servidor web geralmente inclui:</p>
+            </div>
+            <div class="dividePor5">
+                <div>
+                    <h6>Roteador</h6>
+                    <p>Interliga diferentes redes e direciona pacotes de dados entre elas, garantindo comunicação externa.</p>
+                    <img src="/assets/imgs/fluxo/oval.png" alt="Oval">
+                </div>
+                <div>
+                    <h6>Switches</h6>
+                    <p>Conecta dispositivos em uma rede local, permitindo a troca de dados entre eles.</p>
+                    <img src="/assets/imgs/fluxo/retangulo.png" alt="Retângulo">
+                </div>
+                <div>
+                    <h6>Servidor</h6>
+                    <p>Dispositivo que oferece serviços, como páginas web, resolução de nomes ou distribuição de IPs, para outros dispositivos na rede.</p>
+                    <img src="/assets/imgs/fluxo/losangulo.png" alt="Losango">
+                </div>
+                <div>
+                    <h6>Host(PC ou Laptop)</h6>
+                    <p>Computadores ou dispositivos que acessam os serviços disponíveis na rede.</p>
+                    <img src="/assets/imgs/fluxo/setas.png" alt="Setas">
+                </div>
+                <div>
+                    <h6>Cabo de Conexão</h6>
+                    <p>Proporcionam a conexão física entre os dispositivos para transmissão de dados.</p>
+                    <img src="/assets/imgs/fluxo/setas.png" alt="Setas">
+                </div>
+            </div>
+        </section> -->
+        
+        <section class="fund-redes" id="config">
+            <div>
+                <h2 id="text-config">Configurações dos Servidores</h2>
+                <hr>
+                <p>Nas Configurações do Servidor da Rede Interna, o mais importante é:</p>
+            </div>
+            <div class="dividePor3">
+                <div>
+                    <h6>DNS</h6>
+                    <p>Configurações incluem entrada de registros para mapear nomes de domínio a endereços IP.</p>
+                    <img src="/assets/imgs/redes/dns.jpg" alt="dns" onclick="melhora('/assets/imgs/redes/dns.jpg', 80)" title="Clique aqui para uma melhor Visualização">
+                    <p>Exemplo:</p>
+                    <a href="https://sa-bryan.netlify.app/" class="link-true">sa-bryan.netlify.app/</a>
+                </div>
+                <div>
+                    <h6>HTTP</h6>
+                    <p>Necessário especificar o diretório raiz onde os arquivos HTML e outros conteúdos estão armazenados.</p>
+                    <img src="/assets/imgs/redes/http.jpg" alt="http" onclick="melhora('/assets/imgs/redes/http.jpg', 50)" title="Clique aqui para uma melhor Visualização">
+                </div>
+                <div>
+                    <h6>DHCP</h6>
+                    <p>Configuração de um escopo com intervalo de endereços IP, máscara de sub-rede, gateway padrão e DNS.</p>
+                    <img src="/assets/imgs/redes/dhcp.jpg" alt="dhcp" onclick="melhora('/assets/imgs/redes/dhcp.jpg', 80)" title="Clique aqui para uma melhor Visualização">
+                </div>
+            </div>
+        </section>
+
+        <section class="fund-redes; section-especial" id="conceito">
+            <div>
+                <h2 id="text-conceito">Conceito de Servidor</h2>
+                <hr>
+                <p>Um servidor é um dispositivo ou software que fornece serviços ou recursos para outros dispositivos (clientes) em uma rede.</p>
+            </div>
+            <div class="famoso80">
+                <img src="/assets/imgs/bdd/oqebdd.png" alt="Banco de Dados">
+                <a class="recomendar" href="https://www.freepik.com/">Desenhado por Freepik</a>
+            </div>
+        </section>
+
+        <section class="fund-redes; section-especial" id="ft-gripagem">
+            <div>
+                <h2 id="text-ft-gripagem">Vídeo da Crimpagem da Empresa</h2>
+                <hr>
+                <p>Para realizar a crimpagem, utilizamos um alicate de crimpagem específico e conectores RJ45 de alta qualidade. Cortamos o cabo de rede no tamanho desejado, organizamos os fios na sequência correta que é o padrão T568A e fixamos os conectores com precisão. Garantimos conexões seguras e funcionais para um excelente desempenho da rede.</p>
+            </div>
+            <div class="famoso120">
+                <video src="/assets/imgs/redes/video-gripagem.mp4" type="video/mp4" autoplay></video>
+            </div>
+        </section>
+
+        <section class="fund-redes" id="pinagem">
+            <h2 id="text-pinagem">Cabo de Rede - Pinagem</h2>
+            <p>Pinagem padrão de um cabo de rede (RJ45) segue:</p>
+            <hr>
+            <div class="div-dupla">
+                <div>
+                    <h2>Padrão T568A</h2>
+                    <p>Verde/branco, verde, laranja/branco, azul, azul/branco, laranja, marrom/branco, marrom.</p>
+                    <img src="/assets/imgs/redes/pinagemA.jpg" onclick="melhora('/assets/imgs/redes/pinagemA.jpg',90)" id="der"
+                        alt="Modelo Conceitual" title="Clique para uma Melhor Visualização">
+                </div>
+                <div>
+                    <h2>Padrão T568B</h2>
+                    <p>Laranja/branco, laranja, verde/branco, azul, azul/branco, verde, marrom/branco, marrom.</p>
+                    <img src="/assets/imgs/redes/pinagemB.jpg" onclick="melhora('/assets/imgs/redes/pinagemB.jpg',90)" id="mer"
+                        alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
+                </div>
+            </div>
+        </section>
+
+        <section class="fund-redes; section-especial" id="osi">
+            <div>
+                <h2 id="text-osi">Conceito do modelo OSI</h2>
+                <hr>
+                <p>O modelo OSI (Open Systems Interconnection) é um modelo em 7 camadas que padroniza a comunicação em redes.</p>
+            </div>
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)"
+                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+        </section>
+
+        <section class="fund-redes; section-especial" id="tcpip">
+            <div>
+                <h2 id="text-tcpip">Conceito do TCP/IP</h2>
+                <hr>
+                <p>TCP/IP é uma pilha de protocolos de comunicação usados na internet. Ele tem 4 camadas.</p>
+            </div>
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)"
+                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+        </section>
+
+        <section class="fund-redes; section-especial" id="ftp">
+            <div>
+                <h2 id="text-ftp">O que é um servidor FTP?</h2>
+                <hr>
+                <p>Um servidor FTP (File Transfer Protocol) é um servidor usado para transferir arquivos entre clientes e servidores através de uma rede.</p>
+            </div>
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)"
+                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+        </section>
+
+        <section class="fund-redes; section-especial" id="func-ftp">
+            <div>
+                <h2 id="text-func-ftp">Principais funcionalidades do FTP em uma rede</h2>
+                <hr>
+                <p>Transferência de arquivos entre dispositivos.
+                    Armazenamento centralizado.
+                    Controle de acesso por autenticação.
+                    </p>
+            </div>
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)"
+                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+        </section>
+       
+        <section class="fund-redes; section-especial" id="vl-ftp">
+            <div>
+                <h2 id="text-vl-ftp">FTP: vantagens e limitações</h2>
+                <hr>
+                <p>Vantagens: Simplicidade e eficiência em transferências de arquivos.
+                    Limitações: Falta de criptografia nativa, vulnerável a ataques.
+                    </p>
+            </div>
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)"
+                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+        </section>
+
+        <section class="fund-redes" id="df-ftp-an">
+            <h2 id="text-df-ftp-an">Diferenças entre FTP e armazenamento em nuvem</h2>
+            <hr>
+            <div class="div-dupla">
+                <div>
+                    <h2>FTP</h2>
+                    <p>Requer servidores próprios e é limitado em interface e colaboração.</p>
+                    <img src="/assets/imgs/bdd/der.png" onclick="melhora('/assets/imgs/bdd/der.png',90)" id="der"
+                        alt="Modelo Conceitual" title="Clique para uma Melhor Visualização">
+                </div>
+                <div>
+                    <h2>Nuvem</h2>
+                    <p>Acessível pela web, integrada com ferramentas modernas, e oferece segurança aprimorada.</p>
+                    <img src="/assets/imgs/bdd/mer.png" onclick="melhora('/assets/imgs/bdd/mer.png',90)" id="mer"
+                        alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
+                </div>
+            </div>
+        </section>
+
+        <section class="fund-redes; section-especial" id="email">
+            <div>
+                <h2 id="text-email">Servidor de e-mail e suas funções</h2>
+                <hr>
+                <p>Servidor de e-mail gerencia o envio, recebimento e armazenamento de mensagens eletrônicas. Exemplos: SMTP para envio e POP3/IMAP para recebimento.
+
+                </p>
+            </div>
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)"
+                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+        </section>
+
+        <section class="fund-redes; section-especial" id="smtp">
+            <div>
+                <h2 id="text-smtp">SMTP e como ele funciona</h2>
+                <hr>
+                <p>SMTP (Simple Mail Transfer Protocol) é usado para envio de e-mails entre servidores ou de clientes para servidores. Usa a porta 25 (ou 587 para segurança).</p>
+            </div>
+            <img class="famoso40" src="/assets/imgs/bdd/ddd.png" onclick="melhora('/assets/imgs/bdd/ddd.png', 90)"
+                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+        </section>
+
+        <section class="fund-redes" id="pi">
+            <h2 id="text-pi">POP3 e IMAP</h2>
+            <hr>
+            <div class="div-dupla">
+                <div>
+                    <h2>POP3</h2>
+                    <p>Baixa e-mails do servidor para o cliente, removendo-os.</p>
+                    <img src="/assets/imgs/bdd/der.png" onclick="melhora('/assets/imgs/bdd/der.png',90)" id="der"
+                        alt="Modelo Conceitual" title="Clique para uma Melhor Visualização">
+                </div>
+                <div>
+                    <h2>IMAP</h2>
+                    <p>Sincroniza e-mails entre o servidor e o cliente, mantendo os e-mails no servidor.</p>
+                    <img src="/assets/imgs/bdd/mer.png" onclick="melhora('/assets/imgs/bdd/mer.png',90)" id="mer"
+                        alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
+                </div>
+            </div>
+        </section>
+
+        <section class="fund-redes" id="portas">
+            <div>
+                <h2 id="text-portas">Portas 25, 110 e 143</h2>
+                <hr>
+                <p>
+                    As portas são pontos de comunicação lógica usados pelos dispositivos para identificar e direcionar os dados que chegam ou saem. Cada porta é identificada por um número e está associada a um protocolo específico, permitindo que vários serviços funcionem simultaneamente em um mesmo dispositivo.</p>
+            </div>
+            <div class="dividePor3">
+                <div>
+                    <h6>Porta 25</h6>
+                    <p>Usada pelo SMTP para envio de e-mails.</p>
+                    <img src="/assets/imgs/fluxo/oval.png" alt="Oval">
+                </div>
+                <div>
+                    <h6>Porta 110</h6>
+                    <p>Usada pelo POP3 para baixar e-mails do servidor para o cliente.</p>
+                    <img src="/assets/imgs/fluxo/retangulo.png" alt="Retângulo">
+                </div>
+                <div>
+                    <h6>Porta 143</h6>
+                    <p>Usada pelo IMAP para sincronizar e-mails entre servidor e cliente.</p>
+                    <img src="/assets/imgs/fluxo/losangulo.png" alt="Losango">
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <!-- <h2>Tópicos:</h2>
+        <a href="#home">
+            <h3>Começo</h3>
+        </a>
+        <a href="#oqebdd">
+            <h3>O que é Banco de Dados?</h3>
+        </a>
+        <a href="#tpbdd">
+            <h3>Tipos de Banco</h3>
+        </a>
+        <a href="#diaDM">
+            <h3>Diagramas</h3>
+        </a>
+        <a href="#bddEmpresa">
+            <h3>BD da Empresa</h3>
+        </a>
+        <a href="#oqedicidados">
+            <h3>O que é Dicionário de Dados?</h3>
+        </a> -->
+    </aside>
+    <footer>
+        <div class="direitos">
+            <p>Todos os direitos reservados &copy;</p> <span id="dash">-</span>
+            <p>Bryan Prinz / Prinz Code</p>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/Bryanps7"><img src="/assets/imgs/svg/github.svg" alt="logo github"></a>
+            <a href="https://api.whatsapp.com/send?phone=48991375142"><img src="/assets/imgs/svg/mensage.svg"
+                    alt="logo para o whatsapp"></a>
+            <a
+                href="https://www.google.com/maps/search/sesi+tijucas/@-27.2305002,-48.6326707,19z?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"><img
+                    src="/assets/imgs/svg/location.svg" alt="icone de localização"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 
-function melhora(path) {
+function melhora(path, size) {
     let scren = document.createElement('div')
     scren.setAttribute('id', 'melhorVisu')
 
@@ -18,7 +18,7 @@ function melhora(path) {
     img.setAttribute('src', path)
     img.setAttribute('onclick', 'sair()')
     img.setAttribute('title', 'Clique novamente para sair')
-    img.style.width = '90%'
+    img.style.width = size + '%'
 
     scren.appendChild(img)
 

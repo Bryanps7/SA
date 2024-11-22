@@ -15,11 +15,11 @@ RESULTADOS ESPERADOS: Implementação e publicação do site/página que contenh
 	[ ] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido;
 	[ ] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP);
 	[ ] 3. Descrição dos equipamentos aplicados em redes com sua respectiva função e configuração;
-	[ ] 4. Descrição via fluxograma dos algoritmos que a empresa implementa (3 exemplos);
+	[x] 4. Descrição via fluxograma dos algoritmos que a empresa implementa (3 exemplos);
 	[x] 5. Tecnologias banco de dados relacionais utilizadas na empresa - SQL (3 exemplos);
 	[x] 6. Diagramas DER e MER de banco de dados relacionais (3 exemplos);
-	[ ] 7. Componentes Eletrônicos empregados em serviços (3 exemplos);
-	[ ] 8. Fluxograma de algoritmos implementados (3 exemplos);
+	[x] 7. Componentes Eletrônicos empregados em serviços (3 exemplos);
+	[x] 8. Fluxograma de algoritmos implementados (3 exemplos);
 	[x] 9. Programas implementados em Javascript (3 exemplos);
 	[x] 10. Programas de ordenação implementados em Javascript (3 exemplos);
 }
@@ -47,15 +47,15 @@ Eletrônica {
 }
 
 Redes {
-	[ ] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido (cisco packet tracer)
-	[ ] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP) e DHCP
-	[ ] 3. Equipamentos aplicados em redes com sua respectiva função e configuração
+	[x] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido (cisco packet tracer)
+	[x] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP) e DHCP
+	[x] 3. Equipamentos aplicados em redes com sua respectiva função e configuração
 	[ ] 4. Conceito de servidor
-	[ ] 5. DNS - o que é
-	[ ] 6. HTTP o que é
-	[ ] 7. DHCP o que é
-	[ ] 8. Foto da crimpagem
-	[ ] 9. Cabo de rede - pinagem
+	[x] 5. DNS - o que é
+	[x] 6. HTTP o que é
+	[x] 7. DHCP o que é
+	[x] 8. Foto da crimpagem
+	[x] 9. Cabo de rede - pinagem
 	[ ] 10. Condeito do modelo OSI
 	[ ] 11. Conceito do TCP/IP
 	[ ] 12. O que é um servidor FTP?
@@ -85,7 +85,7 @@ Algoritmos e Fluxograma {
 	[x] 2. Simbologia de fluxograma
 	[x] 3. Exemplo dos algoritmos bubble Sort, insertion Sort e selection Sort em fluxograma
 	[x] 4. Mostrar um fluxograma com array de números pares e ímpares
-	[ ] 5. Exemplo de software para fazer fluxograma - luccidChart
+	[x] 5. Exemplo de software para fazer fluxograma - luccidChart
 }
 
 Programação {
