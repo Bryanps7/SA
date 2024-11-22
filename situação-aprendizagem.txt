@@ -4,17 +4,17 @@ Elementos Gerais {
 }
 
 Detalhamento das estrutura e aspecto visual do site/página web a ser implementado deve conter {
-	[x] 1. Barra de navegação, com links de serviços, além do link da página home e de contato;
+	[ ] 1. Barra de navegação, com links de serviços, além do link da página home e de contato;
 	[x] 2. Página de Serviços de programação e tipos de Banco de Dados empregados nos serviços;
 	[x] 3. Página de Algoritmos e Lógica Computacional que a empresa é capaz de implementar;
-	[ ] 4. Página de componentes eletrônicos, componentes de rede, servidores e dispositivos.
+	[x] 4. Página de componentes eletrônicos, componentes de rede, servidores e dispositivos.
 	[x] 5. Rodapé com nome e da marca registrada da empresa.
 }
 
 RESULTADOS ESPERADOS: Implementação e publicação do site/página que contenham os elementos gerais e estrutura do site, descrevendo os serviços relacionados aos serviços que envolvem elementos de rede e eletroeletrônica, modelagem e tipos de banco de dados, técnicas de programação e lógica computacional com os respectivos algoritmos, infraestrutura de redes e servidores, aplicação de scripts em sistemas operacionais e ferramentas de escritório utilizadas para a prestação de serviços. Conteúdo esperado no site/página {
-	[ ] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido;
-	[ ] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP);
-	[ ] 3. Descrição dos equipamentos aplicados em redes com sua respectiva função e configuração;
+	[x] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido;
+	[x] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP);
+	[x] 3. Descrição dos equipamentos aplicados em redes com sua respectiva função e configuração;
 	[x] 4. Descrição via fluxograma dos algoritmos que a empresa implementa (3 exemplos);
 	[x] 5. Tecnologias banco de dados relacionais utilizadas na empresa - SQL (3 exemplos);
 	[x] 6. Diagramas DER e MER de banco de dados relacionais (3 exemplos);
@@ -25,7 +25,7 @@ RESULTADOS ESPERADOS: Implementação e publicação do site/página que contenh
 }
 
 Pagina Principal {
-	[ ] 1. Informações sobre a empresa
+	[x] 1. Informações sobre a empresa
 	[ ] 2. Descrição geral dos serviços
 	[ ] 3. Localização (mapa)
 	[ ] 4. Vídeo dos principais serviços da empresa
@@ -50,22 +50,22 @@ Redes {
 	[x] 1. Elementos, componentes e configuração de rede interna na qual servidor web está inserido (cisco packet tracer)
 	[x] 2. Configuração do servidores: de Domínio (DNS) e de comunicação web (Servidor HTTP) e DHCP
 	[x] 3. Equipamentos aplicados em redes com sua respectiva função e configuração
-	[ ] 4. Conceito de servidor
+	[x] 4. Conceito de servidor
 	[x] 5. DNS - o que é
 	[x] 6. HTTP o que é
 	[x] 7. DHCP o que é
 	[x] 8. Foto da crimpagem
 	[x] 9. Cabo de rede - pinagem
-	[ ] 10. Condeito do modelo OSI
-	[ ] 11. Conceito do TCP/IP
-	[ ] 12. O que é um servidor FTP?
-	[ ] 13. Quais são suas principais funcionalidades em uma rede?
-	[ ] 14. Por que o FTP foi amplamente utilizado no passado? Quais foram as vantagens e limitações dessa tecnologia?
-	[ ] 15. Quais as principais diferenças entre um servidor FTP e serviços de armazenamento em nuvem como Google Drive ou OneDrive?
-	[ ] 16. O que é um servidor de e-mail e quais são suas principais funções em uma rede?
-	[ ] 17. O que é  SMTP e como ele funciona?
-	[ ] 18. O que é o POP3 e o IMAP e como eles funcionam?
-	[ ] 19. O que são as portas 25, 110 e 143 e como elas são usadas pelos protocolos SMTP, POP3 e IMAP.
+	[x] 10. Condeito do modelo OSI
+	[x] 11. Conceito do TCP/IP
+	[x] 12. O que é um servidor FTP?
+	[x] 13. Quais são suas principais funcionalidades em uma rede?
+	[x] 14. Por que o FTP foi amplamente utilizado no passado? Quais foram as vantagens e limitações dessa tecnologia?
+	[x] 15. Quais as principais diferenças entre um servidor FTP e serviços de armazenamento em nuvem como Google Drive ou OneDrive?
+	[x] 16. O que é um servidor de e-mail e quais são suas principais funções em uma rede?
+	[x] 17. O que é  SMTP e como ele funciona?
+	[x] 18. O que é o POP3 e o IMAP e como eles funcionam?
+	[x] 19. O que são as portas 25, 110 e 143 e como elas são usadas pelos protocolos SMTP, POP3 e IMAP.
 }
 
 Banco de Dados {

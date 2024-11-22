@@ -15,13 +15,6 @@ main {
     overflow: auto;
 }
 
-main section {
-    width: 100%;
-    height: 2000px;
-    margin: 10px;
-    background: linear-gradient(#9a9a9a, #5a5a5a, #1a1a1a);
-}
-
 @media (width <= 923px) {
     main {
         height: calc(100vh - 280px);
