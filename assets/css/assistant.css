@@ -1,0 +1,94 @@
+/* Div para 2 informações */
+.div-two {
+    display: flex;
+}
+
+.div-two div {
+    flex: 1 1 100px;
+}
+
+.div-two img {
+    width: 98%;
+}
+ 
+/* Div para 3 informações */
+.div-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div-three div {
+    text-align: center;
+    flex-basis: 330px;
+}
+
+.div-three div img {
+    width: 100%;
+}
+
+/* Div para 5 informações */
+.div-five {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div-five div {
+    text-align: center;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div-five img {
+    width: 100%;
+}
+
+.right {
+    padding-left: 10px;
+}
+
+.right img {
+    width: 100%;
+}
+
+.right video {
+    width: 100%;
+}
+
+.right iframe {
+    width: 100%;
+    height: 250px;
+}
+
+.img-none {
+    border: 0;
+    border-radius: 0;
+}
+
+@media (width <= 923px) {
+    .div-two {
+        display: block;
+    }
+
+    .div-two div {
+        border-bottom: var(--border);
+        margin-bottom: 10px;
+    }
+
+    .div-three div {
+        border-bottom: var(--border);
+        margin-bottom: 10px;
+    }
+
+    .div-five div {
+        margin-bottom: 10px;
+    }
+
+    .right {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+}

@@ -16,6 +16,7 @@ function melhora(path, size) {
     
     let img = document.createElement('img')
     img.setAttribute('src', path)
+    img.setAttribute('class', 'img-none')
     img.setAttribute('onclick', 'sair()')
     img.setAttribute('title', 'Clique novamente para sair')
     img.style.width = size + '%'

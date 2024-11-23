@@ -4,7 +4,7 @@ Elementos Gerais {
 }
 
 Detalhamento das estrutura e aspecto visual do site/página web a ser implementado deve conter {
-	[ ] 1. Barra de navegação, com links de serviços, além do link da página home e de contato;
+	[x] 1. Barra de navegação, com links de serviços, além do link da página home e de contato;
 	[x] 2. Página de Serviços de programação e tipos de Banco de Dados empregados nos serviços;
 	[x] 3. Página de Algoritmos e Lógica Computacional que a empresa é capaz de implementar;
 	[x] 4. Página de componentes eletrônicos, componentes de rede, servidores e dispositivos.
@@ -26,9 +26,9 @@ RESULTADOS ESPERADOS: Implementação e publicação do site/página que contenh
 
 Pagina Principal {
 	[x] 1. Informações sobre a empresa
-	[ ] 2. Descrição geral dos serviços
-	[ ] 3. Localização (mapa)
-	[ ] 4. Vídeo dos principais serviços da empresa
+	[x] 2. Descrição geral dos serviços
+	[x] 3. Localização (mapa)
+	[x] 4. Vídeo dos principais serviços da empresa
 	[ ] 5. Redes sociais e contatos
 }
 
@@ -97,4 +97,36 @@ Programação {
 	[x] 6. Exemplo de programa com estrutura IF, ELSE e ELSE-IF
 	[x] 7. Filmagem da explicação dos métodos de ordenação
 	[x] 8. Programas de ordem crescente e decrescente
+}
+
+Bônus {
+	Calculadora de Fatorial
+	Desenvolva uma função que calcula o fatorial de um número fornecido pelo usuário.
+
+	Verificador de Palíndromos
+	Crie uma função que verifica se uma palavra ou frase é um palíndromo.
+
+	Gerador de Números Aleatórios
+	Faça uma função que gera uma lista de 10 números aleatórios dentro de um intervalo fornecido.
+
+	Contador de Vogais
+	Desenvolva uma função que conta e retorna o número de vogais em uma string.
+
+	Tabuada
+	Crie uma função que exibe a tabuada de um número escolhido pelo usuário.
+
+	Ordenação de Números
+	Faça uma função que recebe uma lista de números e retorna a lista ordenada em ordem crescente.
+
+	Calculadora Básica
+	Desenvolva uma calculadora que realiza operações de soma, subtração, multiplicação e divisão com dois números fornecidos.
+
+	Conversor de Temperatura
+	Crie uma função que converte temperaturas de Celsius para Fahrenheit e vice-versa.
+
+	Remover Duplicados
+	Faça uma função que remove valores duplicados de um array e retorna o array limpo.
+
+	Validador de CPF
+	Desenvolva uma função simples que verifica se um CPF fornecido tem o formato correto (xxx.xxx.xxx-xx).
 }

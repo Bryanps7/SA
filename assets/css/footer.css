@@ -29,11 +29,19 @@ footer .direitos {
 
 .redes a {
     flex-grow: 1;
-    width: 30%;
+    height: 30px;
+    width: 30px;
+    margin: 0 1px;
 }
 
-.redes a img {
+.redes svg path {
     width: 100%;
+    transition: 0.5s;
+    fill: var(--white);
+}
+
+.redes svg:hover path {
+    fill: var(--marineE);
 }
 
 @media (width <= 923px) {

@@ -35,10 +35,29 @@ main hr {
     margin: 5px 0;
 }
 
+main .section-especial {
+    display: flex;
+}
+
+main img {
+    width: 40%;
+    border-radius: 5px;
+}
+
 @media (width <= 923px) {
     main {
         height: calc(100vh - 280px);
         order: 1;
+    }
+}
+
+@media (width <=717px) {
+    main .section-especial {
+        display: block;
+    }
+
+    main img {
+        width: 100%;
     }
 }
 
@@ -56,4 +75,8 @@ ul li {
     margin: 10px 0;
     padding: 10px;
     border-left: 4px solid var(--marineE);
+}
+
+.toma-kalica rect {
+    fill: red;
 }

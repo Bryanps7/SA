@@ -130,7 +130,7 @@ pushNumberSort.addEventListener('click', ()=>{
 
     let existingScreen = document.querySelector('#execute-sort')
     if (existingScreen) {
-        document.querySelector('#sort').removeChild(existingScreen)
+        document.querySelector('#page3').removeChild(existingScreen)
     }
-    document.querySelector('#sort').appendChild(screen)
+    document.querySelector('#page3').appendChild(screen)
 })
