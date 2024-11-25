@@ -49,6 +49,22 @@ main section p {
     font-size: 0.9rem;
 }
 
+main section button {
+    background-color: var(--marineE);
+    border: 3px solid var(--marineE);
+    color: var(--white);
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+main section button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    color: var(--marineE);
+    font-size: 1.01rem;
+}
+
 @media (width <=923px) {
     main {
         height: calc(100vh - 280px);

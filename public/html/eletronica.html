@@ -51,6 +51,28 @@
                 <h2>Resistores e código de Cores</h2>
                 <hr>
                 <p>Os resistores são componentes elétricos que limitam o fluxo de corrente em um circuito. Eles possuem diferentes valores de resistência, indicados em ohms (Ω). O valor de resistência de um resistor é geralmente representado por faixas coloridas pintadas em seu corpo, seguindo um código de cores padronizado. Cada cor representa um número, e, com base na sequência das faixas, é possível determinar o valor do resistor e sua tolerância.</p>
+                <hr>
+                <h2>Calculadora de Resistor</h2>
+                <form id="resistorForm">
+                    <label for="band1">Faixa 1:</label>
+                    <input type="text" id="band1" placeholder="e.g., brown" required>
+                    <br><br>
+                    
+                    <label for="band2">Faixa 2:</label>
+                    <input type="text" id="band2" placeholder="e.g., black" required>
+                    <br><br>
+                    
+                    <label for="band3">Faixa 3 (Multiplicador):</label>
+                    <input type="text" id="band3" placeholder="e.g., red" required>
+                    <br><br>
+                    
+                    <label for="band4">Faixa 4 (Tolerância):</label>
+                    <input type="text" id="band4" placeholder="e.g., gold" required>
+                    <br><br>
+                    
+                    <button type="button" id="calculateButton">Calcular</button>
+                </form>
+                <div id="res"></div>
             </div>
             <div class="right">
                 <img src="/assets/imgs/eletronica/cod-resistor.png" alt="codigo de cor do resistor">
