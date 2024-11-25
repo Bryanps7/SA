@@ -28,8 +28,8 @@ Pagina Principal {
 	[x] 1. Informações sobre a empresa
 	[x] 2. Descrição geral dos serviços
 	[x] 3. Localização (mapa)
-	[x] 4. Vídeo dos principais serviços da empresa
-	[ ] 5. Redes sociais e contatos
+	[ ] 4. Vídeo dos principais serviços da empresa
+	[x] 5. Redes sociais e contatos
 }
 
 Eletrônica {

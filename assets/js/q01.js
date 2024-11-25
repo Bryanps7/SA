@@ -76,7 +76,7 @@ pushNumberEx1.addEventListener('click', () => {
 
     let existingScreen = document.querySelector('#execute-ex1')
     if (existingScreen) {
-        document.querySelector('#ex1').removeChild(existingScreen)
+        document.querySelector('#page4').removeChild(existingScreen)
     }
-    document.querySelector('#ex1').appendChild(screen)
+    document.querySelector('#page4').appendChild(screen)
 })

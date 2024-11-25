@@ -138,165 +138,333 @@
                 <div>
                     <h2>Padrão T568A</h2>
                     <p>Verde/branco, verde, laranja/branco, azul, azul/branco, laranja, marrom/branco, marrom.</p>
-                    <img src="/assets/imgs/redes/pinagemA.jpg" onclick="melhora('/assets/imgs/redes/pinagemA.jpg',80)" alt="Pinagem A" title="Clique para uma Melhor Visualização">
+                    <img src="/assets/imgs/redes/pinagemA.jpg" alt="Pinagem A">
                 </div>
                 <div>
                     <h2>Padrão T568B</h2>
                     <p>Laranja/branco, laranja, verde/branco, azul, azul/branco, verde, marrom/branco, marrom.</p>
-                    <img src="/assets/imgs/redes/pinagemB.jpg" onclick="melhora('/assets/imgs/redes/pinagemB.jpg',80)" alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
+                    <img src="/assets/imgs/redes/pinagemB.jpg" alt="Modelo Lógico">
                 </div>
             </div>
         </section>
 
-        <section class="fund-redes; section-especial" id="osi">
+        <section id="page6" class="div-two">
             <div>
-                <h2 id="text-osi">Conceito do modelo OSI</h2>
+                <h2>Conceito do modelo OSI</h2>
+                <hr>
+                <div>
+                    <h4>1. Física</h4>
+                    <p>Transmissão de bits pelo meio físico (cabos, sinais).</p>
+                </div>
+                <div>
+                    <h4>2. Enlace</h4>
+                    <p>Transferência confiável dentro da mesma rede (Ethernet, Wi-Fi).</p>
+                </div>
+                <div>
+                    <h4>3. Rede</h4>
+                    <p>Roteamento de pacotes entre redes (IP).</p>
+                </div>
+                <div>
+                    <h4>4. Transporte</h4>
+                    <p>Entrega fim a fim de dados (TCP, UDP).</p>
+                </div>
+                <div>
+                    <h4>5. Sessão</h4>
+                    <p>Gerencia conexões entre dispositivos.</p>
+                </div>
+                <div>
+                    <h4>6. Apresentação</h4>
+                    <p>Converte e formata os dados (criptografia, compressão).</p>
+                </div>
+                <div>
+                    <h4>7. Aplicação</h4>
+                    <p>Interage com o usuário (HTTP, FTP, DNS).</p>
+                </div>
                 <hr>
                 <p>O modelo OSI (Open Systems Interconnection) é um modelo em 7 camadas que padroniza a comunicação em redes.</p>
             </div>
-            <img class="famoso40" src="/assets/imgs/redes/osi.png" onclick="melhora('/assets/imgs/redes/osi.png', 90)"
-                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+            <div class="right">
+                <img src="/assets/imgs/redes/modelo-osi.png" onclick="melhora('/assets/imgs/redes/modelo-osi.png', 80)" alt="Modelo OSI" title="Clique para uma Melhor Visualização">
+            </div>
         </section>
 
-        <section class="fund-redes; section-especial" id="tcpip">
+        <section id="page7" class="div-two">
             <div>
-                <h2 id="text-tcpip">Conceito do TCP/IP</h2>
+                <h2>Conceito do TCP/IP</h2>
                 <hr>
-                <p>TCP/IP é uma pilha de protocolos de comunicação usados na internet. Ele tem 4 camadas.</p>
+                <div>
+                    <h4>1. Aplicação</h4>
+                    <p>Oferece serviços para aplicativos (HTTP, DNS, SMTP).</p>
+                </div>
+                <div>
+                    <h4>2. Transporte</h4>
+                    <p>Garante a entrega dos dados:</p>
+                    <ul>
+                        <li><strong>TCP</strong>: Entrega confiável, com verificação de erros.</li>
+                        <li><strong>UDP</strong>: Entrega rápida, mas menos confiável.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>3. Internet</h4>
+                    <p>Faz o roteamento e o endereçamento dos pacotes (IP, ARP).</p>
+                </div>
+                <div>
+                    <h4>4. Acesso à Rede</h4>
+                    <p>Gerencia a conexão física e o envio de pacotes na rede local (Ethernet, Wi-Fi).</p>
+                </div>
             </div>
-            <img class="famoso40" src="/assets/imgs/redes/tcp.jfif" onclick="melhora('/assets/imgs/redes/tcp.jfif', 90)"
-                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+            <div class="right">
+                <img src="/assets/imgs/redes/modelo-tcp-ip.png" onclick="melhora('/assets/imgs/redes/modelo-tcp-ip.png', 80)" alt="Modelo TCP/IP" title="Clique para uma Melhor Visualização">
+                
+            </div>
         </section>
 
-        <section class="fund-redes; section-especial" id="ftp">
+        <section id="page8" class="div-two">
             <div>
-                <h2 id="text-ftp">O que é um servidor FTP?</h2>
+                <h2>O que é um servidor FTP?</h2>
                 <hr>
-                <p>Um servidor FTP (File Transfer Protocol) é um servidor usado para transferir arquivos entre clientes e servidores através de uma rede.</p>
+                <div>
+                    <h4>Definição</h4>
+                    <p>Um <strong>servidor FTP</strong> permite transferir arquivos entre dispositivos usando o protocolo FTP, sendo usado para envio, download e gerenciamento remoto de arquivos.</p>
+                </div>
+                <div>
+                    <h4>Principais Características</h4>
+                    <ul>
+                        <li>Modos de operação: <strong>Ativo</strong> e <strong>Passivo</strong>.</li>
+                        <li>Usado para hospedagem de sites, backups e compartilhamento de arquivos.</li>
+                        <li>Softwares comuns: <strong>FileZilla Server</strong>, <strong>vsftpd</strong>.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Segurança</h4>
+                    <p>Por ser inseguro no formato tradicional, recomenda-se usar versões como:</p>
+                    <ul>
+                        <li><strong>FTPS</strong>: Com criptografia SSL/TLS.</li>
+                        <li><strong>SFTP</strong>: Baseado em SSH.</li>
+                    </ul>
+                </div>
             </div>
-            <img class="famoso40" src="/assets/imgs/redes/ftp.jpeg" onclick="melhora('/assets/imgs/redes/ftp.jpeg', 90)"
-                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+            <div class="right">
+                <img src="/assets/imgs/redes/ftp.jpeg" alt="Servior FTP">
+            </div>
         </section>
 
-        <section class="fund-redes; section-especial" id="func-ftp">
+        <section id="page9">
+            <h2>Principais funcionalidades do FTP em uma rede</h2>
+            <hr>
             <div>
-                <h2 id="text-func-ftp">Principais funcionalidades do FTP em uma rede</h2>
-                <hr>
-                <p>Transferência de arquivos entre dispositivos.
-                    Armazenamento centralizado.
-                    Controle de acesso por autenticação.
-                    </p>
+                <h4>1. Transferência de Arquivos</h4>
+                <ul>
+                    <li><strong>Envio (Upload)</strong>: Envia arquivos para o servidor.</li>
+                    <li><strong>Recebimento (Download)</strong>: Baixa arquivos do servidor.</li>
+                </ul>
             </div>
-            <img class="famoso40" src="/assets/imgs/redes/func-ftp.jpeg" onclick="melhora('/assets/imgs/redes/func-ftp.jpeg', 90)"
-                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+            <div>
+                <h4>2. Gerenciamento Remoto</h4>
+                <p>Criar, renomear, excluir e listar arquivos e pastas no servidor.</p>
+            </div>
+            <div>
+                <h4>3. Acesso Controlado</h4>
+                <p>Autenticação por nome de usuário e senha, com permissões de acesso.</p>
+            </div>
+            <div>
+                <h4>4. Modos de Transferência</h4>
+                <ul>
+                    <li><strong>ASCII</strong>: Para arquivos de texto.</li>
+                    <li><strong>Binário</strong>: Para arquivos não textuais (imagens, vídeos, etc.).</li>
+                </ul>
+            </div>
+            <div>
+                <h4>5. Transferência de Grandes Arquivos</h4>
+                <p>Suporte para mover arquivos maiores que limites de e-mails.</p>
+            </div>
+            <div>
+                <h4>6. Conexões Ativas e Passivas</h4>
+                <p>Adaptável a diferentes configurações de rede e firewalls.</p>
+            </div>
+            <div>
+                <h4>7. Multiplataforma</h4>
+                <p>Funciona em diversos sistemas operacionais e redes, garantindo flexibilidade.</p>
+            </div>
         </section>
        
-        <section class="fund-redes; section-especial" id="vl-ftp">
+        <section id="page10" class="div-two">
             <div>
-                <h2 id="text-vl-ftp">FTP: vantagens e limitações</h2>
+                <h2>FTP: vantagens e limitações</h2>
                 <hr>
-                <p>Vantagens: Simplicidade e eficiência em transferências de arquivos.
-                    Limitações: Falta de criptografia nativa, vulnerável a ataques.
-                    </p>
+                <div>
+                    <h4>Vantagens do FTP</h4>
+                    <ul>
+                        <li><strong>Facilidade de Uso</strong>: O FTP é fácil de configurar e usar, com uma interface simples para usuários novatos e experientes.</li>
+                        <li><strong>Compatibilidade</strong>: É amplamente suportado em diversos sistemas operacionais, tornando-o versátil para diferentes plataformas.</li>
+                        <li><strong>Recursos Avançados</strong>: Permite transferências paralelas e a retomada de transferências interrompidas, aumentando a flexibilidade.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Limitações do FTP</h4>
+                    <ul>
+                        <li><strong>Segurança</strong>: Transmite dados em texto claro, o que facilita a interceptação de informações, incluindo senhas e arquivos.</li>
+                        <li><strong>Desempenho em Redes Lentas</strong>: Pode ser ineficiente em redes com baixa largura de banda, causando lentidão nas transferências.</li>
+                        <li><strong>Falta de Criptografia</strong>: Não oferece criptografia nativa, o que o torna inadequado para transferências de dados sensíveis.</li>
+                    </ul>
+                </div>
             </div>
-            <img class="famoso40" src="/assets/imgs/redes/vd-fto.jpeg" onclick="melhora('/assets/imgs/redes/vd-fto.jpeg', 90)"
-                id="ddd" alt="Exemplo de Dicionário de Dados" title="Clique para uma Melhor Visualização">
+            <div class="right">
+                <img src="/assets/imgs/redes/vd-ftp.jpeg" alt="Vantagens e Desvantagens: FTP">
+            </div>
         </section>
 
-        <section id="df-ftp-an">
-            <h2 id="text-df-ftp-an">Diferenças entre FTP e armazenamento em nuvem</h2>
+        <section id="page11">
+            <h2>Diferenças entre FTP e Armazenamento em Nuvem</h2>
             <hr>
-            <div class="div-dupla">
+            <div class="div-two ; align">
                 <div>
                     <h2>FTP</h2>
-                    <p>Requer servidores próprios e é limitado em interface e colaboração.</p>
-                    <img src="/assets/imgs/redes/ftp-nuvem.jpg" onclick="melhora('/assets/imgs/redes/ftp-nuvem.jpg',90)" id="der"
-                        alt="Modelo Conceitual" title="Clique para uma Melhor Visualização">
+                    <p>O FTP (File Transfer Protocol) é um protocolo usado para transferir arquivos entre computadores através de um servidor local. Para usá-lo, é necessário configurar um servidor, o que exige um certo conhecimento técnico. As transferências de arquivos no FTP precisam ser feitas manualmente e, sempre que há uma alteração, o arquivo precisa ser enviado novamente.</p>
+                    <img src="/assets/imgs/redes/ftp-nuvem.jpg" alt="FTPxNuvem">
                 </div>
                 <div>
-                    <h2>Nuvem</h2>
-                    <p>Acessível pela web, integrada com ferramentas modernas, e oferece segurança aprimorada.</p>
-                    <img src="/assets/imgs/redes/nuvem-ftp.png" onclick="melhora('/assets/imgs/redes/nuvem-ftp.png',90)" id="mer"
-                        alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
+                    <h2>Armazenamento na Nuvem</h2>
+                    <p>O Armazenamento em nuvem permite que arquivos sejam armazenados em servidores remotos, acessíveis via internet. Ao contrário do FTP, a nuvem não exige que você gerencie servidores. Ela oferece maior facilidade de uso, com integração com dispositivos móveis, e recursos como sincronização automática de arquivos e controle de versões. A segurança na nuvem é frequentemente mais robusta, com criptografia e backups automáticos.</p>
+                    <img src="/assets/imgs/redes/nuvem-ftp.jpeg " alt="NuvemxFTP">
                 </div>
             </div>
         </section>
 
-        <section id="email">
-            <h2 id="text-email">Servidor de e-mail e suas funções</h2>
+        <section id="page12">
+            <h2>Servidor de e-mail e suas funções</h2>
             <hr>
-            <p>Servidor de e-mail gerencia o envio, recebimento e armazenamento de mensagens eletrônicas. Exemplos: SMTP para envio e POP3/IMAP para recebimento.</p>
+            <p>O servidor de e-mail é essencial para enviar, receber e armazenar mensagens eletrônicas de forma eficiente e segura.</p>
+    
+            <h4>Funções principais</h4>
+            <ul>
+                <li><strong>Envio de e-mails:</strong> Transmite mensagens utilizando o protocolo SMTP.</li>
+                <li><strong>Recebimento de e-mails:</strong> Armazena mensagens com protocolos como POP3 e IMAP.</li>
+                <li><strong>Armazenamento:</strong> Mantém os e-mails no servidor até serem acessados.</li>
+                <li><strong>Segurança:</strong> Protege comunicações com autenticação e criptografia.</li>
+                <li><strong>Integração:</strong> Trabalha com ferramentas como CRM e marketing digital.</li>
+            </ul>
         </section>
 
-        <section id="smtp">
-            <h2 id="text-smtp">SMTP e como ele funciona</h2>
+        <section id="page13">
+            <h2>SMTP e como ele funciona</h2>
             <hr>
-            <p>SMTP (Simple Mail Transfer Protocol) é usado para envio de e-mails entre servidores ou de clientes para servidores. Usa a porta 25 (ou 587 para segurança).</p>
+            <p>O SMTP (Simple Mail Transfer Protocol) é o protocolo padrão para envio de e-mails na internet. Ele realiza o roteamento e a entrega de mensagens.</p>
+            
+            <h4>Funcionamento</h4>
+            <ul>
+                <li><strong>Conexão e Autenticação:</strong> O cliente conecta ao servidor SMTP e se autentica.</li>
+                <li><strong>Envio da Mensagem:</strong> Comandos SMTP como <code>MAIL FROM</code> e <code>RCPT TO</code> identificam remetente e destinatário.</li>
+                <li><strong>Roteamento:</strong> O servidor verifica o domínio e consulta registros DNS se necessário.</li>
+                <li><strong>Entrega Final:</strong> A mensagem é entregue ao servidor do destinatário.</li>
+            </ul>
+
+            <h4>Portas Comuns</h4>
+            <ul>
+                <li><strong>Porta 25:</strong> Antiga padrão, mas atualmente bloqueada em muitos casos.</li>
+                <li><strong>Porta 587:</strong> Padrão moderno com suporte à criptografia TLS.</li>
+                <li><strong>Porta 465:</strong> Usada para conexões com SSL (menos comum).</li>
+            </ul>
+
+            <h4>Uso</h4>
+            <p>O SMTP é usado para envio de e-mails, enquanto protocolos como IMAP ou POP3 cuidam da recuperação de mensagens.</p>
         </section>
 
-        <section id="pi">
-            <h2 id="text-pi">POP3 e IMAP</h2>
+        <section id="page14">
+            <h2>POP3 e IMAP</h2>
             <hr>
-            <div class="div-dupla">
+            <div class="div-two ; align">
                 <div>
-                    <h2>POP3</h2>
-                    <p>Baixa e-mails do servidor para o cliente, removendo-os.</p>
-                    <img src="/assets/imgs/redes/pop3.jpeg" onclick="melhora('/assets/imgs/redes/pop3.jpeg',90)" id="der"
-                        alt="Modelo Conceitual" title="Clique para uma Melhor Visualização">
+                    <h2>POP3 (Post Office Protocol 3)</h2>
+                    <p>O POP3 baixa os e-mails do servidor para o dispositivo local e geralmente os remove do servidor após o download. É ideal para usuários que acessam e-mails em um único dispositivo.</p>
+                    <h4>Vantagens do POP3:</h4>
+                    <ul>
+                        <li>Armazenamento local dos e-mails.</li>
+                        <li>Menor uso de espaço no servidor.</li>
+                        <li>Acesso offline garantido.</li>
+                    </ul>
+                    <h4>Desvantagens do POP3:</h4>
+                    <ul>
+                        <li>Sem sincronização entre dispositivos.</li>
+                        <li>Maior risco de perda de dados.</li>
+                    </ul>
+                    <img src="/assets/imgs/redes/pop3.jpg" alt="POP3">
                 </div>
                 <div>
-                    <h2>IMAP</h2>
-                    <p>Sincroniza e-mails entre o servidor e o cliente, mantendo os e-mails no servidor.</p>
-                    <img src="/assets/imgs/redes/imap.jpeg" onclick="melhora('/assets/imgs/redes/imap.jpeg',90)" id="mer"
-                        alt="Modelo Lógico" title="Clique para uma Melhor Visualização">
+                    <h2>IMAP (Internet Message Access Protocol)</h2>
+                    <p>O IMAP mantém os e-mails no servidor, permitindo acessá-los de diferentes dispositivos e sincronizando as alterações em tempo real.</p>
+                    <h4>Vantagens do IMAP:</h4>
+                    <ul>
+                        <li>Sincronização em múltiplos dispositivos.</li>
+                        <li>Melhor organização e recuperação de dados.</li>
+                        <li>Menor risco de perda de e-mails.</li>
+                    </ul>
+                    <h4>Desvantagens do IMAP:</h4>
+                    <ul>
+                        <li>Requer mais espaço no servidor.</li>
+                        <li>Maior dependência de conexão à internet.</li>
+                    </ul>
+                    <img src="/assets/imgs/redes/imap.jpg" alt="Modelo Lógico">
                 </div>
             </div>
         </section>
 
-        <section id="portas">
-            <div>
-                <h2 id="text-portas">Portas 25, 110 e 143</h2>
-                <hr>
-                <p>
-                    As portas são pontos de comunicação lógica usados pelos dispositivos para identificar e direcionar os dados que chegam ou saem. Cada porta é identificada por um número e está associada a um protocolo específico, permitindo que vários serviços funcionem simultaneamente em um mesmo dispositivo.</p>
-            </div>
-            <div class="dividePor3">
-                <div>
-                    <h6>Porta 25</h6>
-                    <p>Usada pelo SMTP para envio de e-mails.</p>
-                </div>
-                <div>
-                    <h6>Porta 110</h6>
-                    <p>Usada pelo POP3 para baixar e-mails do servidor para o cliente.</p>
-                </div>
-                <div>
-                    <h6>Porta 143</h6>
-                    <p>Usada pelo IMAP para sincronizar e-mails entre servidor e cliente.</p>
-                </div>
-            </div>
-            <img src="/assets/imgs/redes/portas.jpg" alt="Portas">
+        <section id="page15">
+            <h2>Portas 25, 110 e 143</h2>
+            <hr>
+            <p>As portas são pontos de comunicação lógica usados pelos dispositivos para identificar e direcionar os dados que chegam ou saem. Cada porta é identificada por um número e está associada a um protocolo específico, permitindo que vários serviços funcionem simultaneamente em um mesmo dispositivo.</p>
+
+            <h4>Porta 25</h4>
+            <p>Usada pelo protocolo SMTP (Simple Mail Transfer Protocol), é a porta padrão para o envio de e-mails. Devido a problemas com spam, muitos provedores bloqueiam esta porta, recomendando alternativas como a porta 587 para conexões seguras.</p>
+
+            <h4>Porta 110</h4>
+            <p>Associada ao protocolo POP3 (Post Office Protocol 3), permite o recebimento de e-mails. Esta porta é utilizada para conexões não criptografadas, onde os e-mails são baixados do servidor para o cliente de e-mail e, em geral, removidos do servidor.</p>
+
+            <h4>Porta 143</h4>
+            <p>Utilizada pelo protocolo IMAP (Internet Message Access Protocol), permite acessar e-mails diretamente no servidor e sincronizar entre dispositivos. Assim como a porta 110, a porta 143 é usada para conexões sem criptografia.</p>
         </section>
     </main>
     <aside>
-        <!-- <h2>Tópicos:</h2>
-        <a href="#home">
+        <h2>Tópicos:</h2>
+        <a href="#page0">
             <h3>Começo</h3>
         </a>
-        <a href="#oqebdd">
-            <h3>O que é Banco de Dados?</h3>
+        <a href="#page1">
+            <h3>Dispositivos da Rede Interna</h3>
         </a>
-        <a href="#tpbdd">
-            <h3>Tipos de Banco</h3>
+        <a href="#page2">
+            <h3>Configurações do Servidor</h3>
         </a>
-        <a href="#diaDM">
-            <h3>Diagramas</h3>
+        <a href="#page3">
+            <h3>Conceito de Servidor</h3>
         </a>
-        <a href="#bddEmpresa">
-            <h3>BD da Empresa</h3>
+        <a href="#page4">
+            <h3>Gripagem</h3>
         </a>
-        <a href="#oqedicidados">
-            <h3>O que é Dicionário de Dados?</h3>
-        </a> -->
+        <a href="#page5">
+            <h3>Cabo de Rede</h3>
+        </a>
+        <a href="#page6">
+            <h3>Modelo OSI</h3>
+        </a>
+        <a href="#page7">
+            <h3>Modelo TCP/IP</h3>
+        </a>
+        <a href="#page8">
+            <h3>Servidor FTP</h3>
+        </a>
+        <a href="#page12">
+            <h3>Servidor E-mail</h3>
+        </a>
+        <a href="#page13">
+            <h3>SMTP</h3>
+        </a>
+        <a href="#page14">
+            <h3>POP3 e IMAP</h3>
+        </a>
+        <a href="#page15">
+            <h3>Portas</h3>
+        </a>
     </aside>
     <footer>
         <div class="direitos">

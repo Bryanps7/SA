@@ -1,14 +1,15 @@
-let queue = []
-
-let matriz3x3 = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0]
-]
 
 let pushNumberEx5 = document.querySelector('#getEx5')
 
 pushNumberEx5.addEventListener('click', ()=>{
+    let queue = []
+    
+    let matriz3x3 = [
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+    ]
+    
     let screen = document.createElement('div')
     
     screen.setAttribute('id', 'execute-ex5')
@@ -44,7 +45,7 @@ pushNumberEx5.addEventListener('click', ()=>{
         
     let existingScreen = document.querySelector('#execute-ex5')
     if(existingScreen) {
-        document.querySelector('#ex5').removeChild(existingScreen)
+        document.querySelector('#page6').removeChild(existingScreen)
     }
-    document.querySelector('#ex5').appendChild(screen)
+    document.querySelector('#page6').appendChild(screen)
 })

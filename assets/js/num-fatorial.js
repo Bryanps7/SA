@@ -29,7 +29,7 @@ pushNumberFat.addEventListener('click', ()=>{
 
     let existingScreen = document.querySelector('#execute-fat')
     if(existingScreen) {
-        document.querySelector('#fat').removeChild(existingScreen)
+        document.querySelector('#page2').removeChild(existingScreen)
     }
-    document.querySelector('#fat').appendChild(screen)
+    document.querySelector('#page2').appendChild(screen)
 })

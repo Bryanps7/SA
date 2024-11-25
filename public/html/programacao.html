@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/assets/css/prog.css">
     
     <script src="/assets/js/header.js" defer></script>
+    <script src="/assets/js/screenShow.js" defer></script>
+    <script src="/assets/js/imgNotCopy.js" defer></script>
 
     <script src="/assets/js/num-primos-compostos.js" defer></script>
     <script src="/assets/js/num-fatorial.js" defer></script>
@@ -23,7 +25,6 @@
     <script src="/assets/js/q01.js" defer></script>
     <script src="/assets/js/q02.js" defer></script>
     <script src="/assets/js/q05.js" defer></script>
-    <script src="/assets/js/screenShow.js" defer></script>
 </head>
 <body>
     <header>
@@ -89,9 +90,9 @@ pushNumberNPC.addEventListener('click', ()=>{
 
     let existingScreen = document.querySelector('#execute-NPC')
     if(existingScreen) {
-        document.querySelector('#npc').removeChild(existingScreen)
+        document.querySelector('#page1').removeChild(existingScreen)
     }
-    document.querySelector('#npc').appendChild(screen)
+    document.querySelector('#page1').appendChild(screen)
 })
                 </pre>
             </div>
@@ -131,9 +132,9 @@ pushNumberFat.addEventListener('click', ()=>{
 
     let existingScreen = document.querySelector('#execute-fat')
     if(existingScreen) {
-        document.querySelector('#fat').removeChild(existingScreen)
+        document.querySelector('#page2').removeChild(existingScreen)
     }
-    document.querySelector('#fat').appendChild(screen)
+    document.querySelector('#page2').appendChild(screen)
 })                 
                 </pre>
             </div>
@@ -366,9 +367,9 @@ pushNumberEx1.addEventListener('click', () => {
 
     let existingScreen = document.querySelector('#execute-ex1')
     if (existingScreen) {
-        document.querySelector('#ex1').removeChild(existingScreen)
+        document.querySelector('#page4').removeChild(existingScreen)
     }
-    document.querySelector('#ex1').appendChild(screen)
+    document.querySelector('#page4').appendChild(screen)
 })
                 </pre>
             </div>
@@ -440,9 +441,9 @@ pushNumberEx2.addEventListener('click', ()=>{
     
     let existingScreen = document.querySelector('#execute-ex2')
     if(existingScreen) {
-        document.querySelector('#ex2').removeChild(existingScreen)
+        document.querySelector('#page5').removeChild(existingScreen)
     }
-    document.querySelector('#ex2').appendChild(screen)
+    document.querySelector('#page5').appendChild(screen)
 })
                 </pre>
             </div>
@@ -456,17 +457,17 @@ pushNumberEx2.addEventListener('click', ()=>{
             <button onclick="showScreen('code-ex5')">Mostrar Código</button>
             <div class="screen" id="code-ex5" style="display: none;">
                 <pre>
-let queue = []
-
-let matriz3x3 = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0]
-]
-
 let pushNumberEx5 = document.querySelector('#getEx5')
 
 pushNumberEx5.addEventListener('click', ()=>{
+    let queue = []
+    
+    let matriz3x3 = [
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+    ]
+    
     let screen = document.createElement('div')
     
     screen.setAttribute('id', 'execute-ex5')
@@ -478,7 +479,7 @@ pushNumberEx5.addEventListener('click', ()=>{
     for (let i = 1; i &#60;= 9; i++) {
         setTimeout(()=>{
             queue.push(i)
-            screen.innerHTML += `[ ${queue.join(', ')} ]`
+            screen.innerHTML += `[ ${queue.join(', ')} ] `
         }, 1000 * i)
     }
     
@@ -496,15 +497,15 @@ pushNumberEx5.addEventListener('click', ()=>{
 
     for(let i = 0; i &#60; matriz3x3.length; i++) {
         setTimeout(()=>{
-            screen.innerHTML += `[ ${matriz3x3[i].join(', ')} ]`
+            screen.innerHTML += `[ ${matriz3x3[i].join(', ')} ] `
         }, 9000 + (i*1000))
     }
         
     let existingScreen = document.querySelector('#execute-ex5')
     if(existingScreen) {
-        document.querySelector('#ex5').removeChild(existingScreen)
+        document.querySelector('#page6').removeChild(existingScreen)
     }
-    document.querySelector('#ex5').appendChild(screen)
+    document.querySelector('#page6').appendChild(screen)
 })
                 </pre>
             </div>

@@ -34,7 +34,7 @@ pushNumberNPC.addEventListener('click', ()=>{
 
     let existingScreen = document.querySelector('#execute-NPC')
     if(existingScreen) {
-        document.querySelector('#npc').removeChild(existingScreen)
+        document.querySelector('#page1').removeChild(existingScreen)
     }
-    document.querySelector('#npc').appendChild(screen)
+    document.querySelector('#page1').appendChild(screen)
 })

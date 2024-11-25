@@ -7,8 +7,9 @@ aside {
     flex-direction: column;
     background-color: #a1a1a1;
     flex: 1 1 200px;
+    height: calc(100vh - 160px);
     padding: 10px;
-
+    overflow: auto;
 }
 
 aside h3 {
