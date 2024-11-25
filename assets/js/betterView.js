@@ -8,7 +8,7 @@ function melhora(path, size) {
     scren.style.left = '0'
     scren.style.width = '100%'
     scren.style.height = '100%'
-    scren.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'
+    scren.style.backgroundColor = 'rgba(0, 0, 0, 0.9)'
     scren.style.display = 'flex'
     scren.style.justifyContent = 'center'
     scren.style.alignItems = 'center'
