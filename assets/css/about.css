@@ -42,15 +42,15 @@ main img {
 
 .about {
     margin-left: 5px;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .about a {
-    flex-grow: 1;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     margin: 0 1px;
 }
 
@@ -80,6 +80,7 @@ main img {
     .about {
         border-bottom: 0;
         height: 50px;
+        width: 100%;
     }
     
     .about a {
